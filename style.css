@@ -331,21 +331,21 @@ body {
 
 /* Side-by-side columns */
 .bhajan-columns {
-  border-top: 1px solid var(--color-border);
-  padding-top: 1.5rem;
+  padding-top: 0;
 }
 
 .columns-header {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 2rem;
   margin-bottom: 1rem;
 }
 
 .verse-pair {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 2rem;
+  align-items: start;
   margin-bottom: 1.25rem;
   padding-bottom: 1.25rem;
   border-bottom: 1px solid var(--color-border-light);
@@ -370,19 +370,13 @@ body {
   font-size: 1rem;
 }
 
+.verse-hindi {
+  font-size: 1rem;
+}
+
 .verse-translation {
   font-size: 0.95rem;
   color: var(--color-text-muted);
-}
-
-.verse-label {
-  display: inline-block;
-  font-size: 0.7rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--color-accent);
-  margin-bottom: 0.4rem;
 }
 
 /* Bhajan sources */
@@ -543,6 +537,23 @@ body {
 
   .verse-transliteration {
     margin-bottom: 0.5rem;
+  }
+
+  .verse-hindi::before {
+    content: 'Hindi';
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-accent);
+    margin-bottom: 0.35rem;
+  }
+
+  .verse-hindi {
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px dashed var(--color-border-light);
   }
 
   .verse-transliteration::before {
