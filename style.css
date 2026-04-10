@@ -424,22 +424,10 @@ body {
   border-radius: var(--radius);
 }
 
-.family-tree-pdf {
-  width: 100%;
-  height: 80vh;
-  min-height: 500px;
-  border: none;
+.family-tree-img {
+  max-width: 100%;
+  height: auto;
   border-radius: var(--radius);
-  mix-blend-mode: multiply;
-}
-
-.family-tree-container p {
-  padding: 2rem;
-  color: var(--color-text-muted);
-}
-
-.family-tree-container p a {
-  color: var(--color-accent);
 }
 
 /* ---- Album Grid ---- */
