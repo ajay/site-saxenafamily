@@ -415,6 +415,18 @@ body {
   text-decoration: underline;
 }
 
+/* ---- Family Tree ---- */
+.family-tree-container {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  text-align: center;
+}
+
+.family-tree-container img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* ---- Album Grid ---- */
 .album-grid {
   display: flex;
