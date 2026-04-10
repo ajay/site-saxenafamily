@@ -152,8 +152,8 @@ body {
 
 /* ---- Photo Grid ---- */
 .photo-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, max-content));
+  display: flex;
+  flex-wrap: wrap;
   gap: 1.5rem;
   margin-top: 2rem;
   justify-content: center;
@@ -166,6 +166,7 @@ body {
   cursor: pointer;
   transition: transform var(--transition), box-shadow var(--transition);
   background: var(--color-surface);
+  max-width: 420px;
 }
 
 .photo-card:hover {
@@ -584,7 +585,8 @@ body {
   }
 
   .photo-grid {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
