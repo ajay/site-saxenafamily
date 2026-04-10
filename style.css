@@ -166,10 +166,10 @@ body {
 /* ---- Photo Grid ---- */
 .photo-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, max-content));
   gap: 1.5rem;
   margin-top: 2rem;
-  justify-items: center;
+  justify-content: center;
 }
 
 .photo-card {
