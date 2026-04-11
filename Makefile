@@ -65,6 +65,7 @@ $(info )
 clean:
 	@## clean generated files
 	$(Q) $(RM) gopal-krishna-saxena/data/albums-resolved.json
+	$(Q) $(RM) gopal-krishna-saxena/media/album-covers
 
 ################################################################################
 

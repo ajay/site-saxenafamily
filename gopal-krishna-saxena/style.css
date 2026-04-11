@@ -446,8 +446,8 @@ body {
 .album-card {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 1.25rem 1.5rem;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
   background: var(--color-surface);
   border-radius: var(--radius);
   box-shadow: var(--shadow-sm);
@@ -459,6 +459,22 @@ body {
 .album-card:hover {
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
+}
+
+.album-cover {
+  width: 56px;
+  height: 56px;
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.album-info {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
 }
 
 .album-card h3 {

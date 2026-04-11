@@ -167,7 +167,12 @@ document.addEventListener('DOMContentLoaded', function () {
           a.href = album.url;
           a.target = '_blank';
           a.rel = 'noopener';
-          a.innerHTML = '<h3>' + album.title + '</h3><span class="album-link-text">View on Google Photos</span>';
+          var html = '';
+          if (album.cover) {
+            html += '<img class="album-cover" src="' + album.cover + '" alt="' + album.title + '">';
+          }
+          html += '<div class="album-info"><h3>' + album.title + '</h3></div>';
+          a.innerHTML = html;
           albumGrid.appendChild(a);
         });
       });
