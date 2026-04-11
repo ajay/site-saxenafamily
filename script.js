@@ -118,6 +118,42 @@ document.addEventListener('DOMContentLoaded', function () {
     return html;
   }
 
+  // -- Load posters from JSON --
+  var posterGrid = document.getElementById('poster-grid');
+  if (posterGrid) {
+    fetch('data/posters.json')
+      .then(function (r) { return r.json(); })
+      .then(function (posters) {
+        posters.forEach(function (poster) {
+          var div = document.createElement('div');
+          div.className = 'photo-card';
+          var img = document.createElement('img');
+          img.src = poster.src;
+          img.alt = poster.alt;
+          img.loading = 'lazy';
+          div.appendChild(img);
+          posterGrid.appendChild(div);
+        });
+        bindLightbox();
+      });
+  }
+
+  // -- Load family tree from JSON --
+  var treeContainer = document.getElementById('family-tree-container');
+  if (treeContainer) {
+    fetch('data/family-tree.json')
+      .then(function (r) { return r.json(); })
+      .then(function (images) {
+        images.forEach(function (item) {
+          var img = document.createElement('img');
+          img.src = item.src;
+          img.alt = item.alt;
+          img.className = 'family-tree-img';
+          treeContainer.appendChild(img);
+        });
+      });
+  }
+
   // -- Load photo albums from JSON --
   var albumGrid = document.getElementById('album-grid');
   if (albumGrid) {
@@ -140,14 +176,18 @@ document.addEventListener('DOMContentLoaded', function () {
   var lightbox = document.getElementById('lightbox');
   var lightboxImg = document.getElementById('lightbox-img');
 
-  document.querySelectorAll('.photo-card img').forEach(function (img) {
-    img.addEventListener('click', function () {
-      lightboxImg.src = img.src;
-      lightboxImg.alt = img.alt;
-      lightbox.classList.add('open');
-      document.body.style.overflow = 'hidden';
+  function bindLightbox() {
+    document.querySelectorAll('.photo-card img').forEach(function (img) {
+      if (img._lightboxBound) return;
+      img._lightboxBound = true;
+      img.addEventListener('click', function () {
+        lightboxImg.src = img.src;
+        lightboxImg.alt = img.alt;
+        lightbox.classList.add('open');
+        document.body.style.overflow = 'hidden';
+      });
     });
-  });
+  }
 
   window.closeLightbox = function () {
     lightbox.classList.remove('open');
