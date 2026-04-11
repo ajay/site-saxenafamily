@@ -123,6 +123,13 @@ body {
   color: var(--color-primary);
 }
 
+.nav-back {
+  color: var(--color-accent);
+  font-weight: 600;
+  border-right: 1px solid var(--color-border);
+  margin-right: 0.25rem;
+}
+
 .nav-link.active {
   color: var(--color-primary);
   border-bottom-color: var(--color-accent);
