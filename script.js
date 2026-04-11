@@ -157,9 +157,10 @@ document.addEventListener('DOMContentLoaded', function () {
   // -- Load photo albums from JSON --
   var albumGrid = document.getElementById('album-grid');
   if (albumGrid) {
-    fetch('data/albums.json')
+    fetch('data/albums-resolved.json')
       .then(function (r) { return r.json(); })
       .then(function (albums) {
+        albums.sort(function (a, b) { return a.title.localeCompare(b.title); });
         albums.forEach(function (album) {
           var a = document.createElement('a');
           a.className = 'album-card';
