@@ -2,8 +2,24 @@
 
 REPO_ROOT := $(shell git rev-parse --show-toplevel)
 
-include $(REPO_ROOT)/tools/build-tools/makefiles/help.mk
-include $(REPO_ROOT)/tools/build-tools/makefiles/functions.mk
+repo-init:
+	@## initialize git submodules
+	git submodule sync --recursive
+	git submodule update --init --recursive
+
+ifneq ($(MAKECMDGOALS),repo-init)
+ifeq (,$(wildcard $(REPO_ROOT)/tools/build-tools/makefiles/help.mk))
+$(info )
+$(info Submodules not initialized. Run 'make repo-init' first.)
+$(info )
+$(error aborting)
+endif
+endif
+
+################################################################################
+
+-include $(REPO_ROOT)/tools/build-tools/makefiles/help.mk
+-include $(REPO_ROOT)/tools/build-tools/makefiles/functions.mk
 
 ################################################################################
 
