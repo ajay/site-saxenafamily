@@ -6,8 +6,8 @@ import re
 import subprocess
 import sys
 
-ALBUMS_INPUT = "data/albums.json"
-ALBUMS_OUTPUT = "data/albums-resolved.json"
+ALBUMS_INPUT = "gopal-krishna-saxena/data/albums.json"
+ALBUMS_OUTPUT = "gopal-krishna-saxena/data/albums-resolved.json"
 
 def fetch_title(url):
     try:
