@@ -100,7 +100,9 @@ body {
 }
 
 .nav-link {
-  display: block;
+  display: flex;
+  align-items: center;
+  text-align: center;
   padding: 1rem 1.25rem;
   text-decoration: none;
   color: var(--color-text-muted);
