@@ -46,8 +46,10 @@
     }
 
     .memorial-link {
-      display: block;
-      padding: 1.5rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      padding: 1.25rem 1.5rem;
       background: #fff;
       border-radius: 8px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.08);
@@ -59,6 +61,14 @@
     .memorial-link:hover {
       transform: translateY(-2px);
       box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    }
+
+    .memorial-link img {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
     }
 
     .memorial-link h2 {
@@ -78,8 +88,11 @@
   <h1>Saxena Family</h1>
   <div class="memorial-links">
     <a href="gopal-krishna-saxena/" class="memorial-link">
-      <h2>Gopal Krishna Saxena</h2>
-      <p>February 22, 1934 &mdash; April 4, 2026</p>
+      <img src="media/gopal-krishna-saxena.png" alt="Gopal Krishna Saxena">
+      <div>
+        <h2>Gopal Krishna Saxena</h2>
+        <p>February 22, 1934 &mdash; April 4, 2026</p>
+      </div>
     </a>
   </div>
 </body>
