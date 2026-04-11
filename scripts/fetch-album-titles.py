@@ -8,8 +8,8 @@ import subprocess
 import sys
 
 ALBUMS_INPUT = "gopal-krishna-saxena/data/albums.json"
-ALBUMS_OUTPUT = "gopal-krishna-saxena/data/albums-resolved.json"
-COVERS_DIR = "gopal-krishna-saxena/media/album-covers"
+ALBUMS_OUTPUT = "build/gopal-krishna-saxena/data/albums-resolved.json"
+COVERS_DIR = "build/gopal-krishna-saxena/media/album-covers"
 
 
 def fetch_album_page(url):
@@ -83,9 +83,10 @@ def main():
         album = {"title": title, "url": url}
         if cover_path:
             # Store path relative to the page's index.html
-            album["cover"] = cover_path.replace("gopal-krishna-saxena/", "")
+            album["cover"] = cover_path.replace("build/gopal-krishna-saxena/", "")
         albums.append(album)
 
+    os.makedirs(os.path.dirname(ALBUMS_OUTPUT), exist_ok=True)
     with open(ALBUMS_OUTPUT, "w") as f:
         json.dump(albums, f, ensure_ascii=False, indent=2)
 

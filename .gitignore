@@ -2,6 +2,6 @@
 *.swp
 *.swo
 *~
-data/albums-resolved.json
+build/
 gopal-krishna-saxena/data/albums-resolved.json
-gopal-krishna-saxena/media/album-covers/
+gopal-krishna-saxena/media/album-covers

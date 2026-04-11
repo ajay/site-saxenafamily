@@ -64,17 +64,23 @@ $(info )
 
 clean:
 	@## clean generated files
+	$(Q) $(RM) build
 	$(Q) $(RM) gopal-krishna-saxena/data/albums-resolved.json
 	$(Q) $(RM) gopal-krishna-saxena/media/album-covers
 
 ################################################################################
 
 fetch-albums:
-	@## fetch album titles from Google Photos
+	@## fetch album titles and covers from Google Photos
 	$(Q) $(PYTHON) scripts/fetch-album-titles.py
 
-build: fetch-albums
-	@## build (fetch album titles)
+link-build:
+	@## symlink build outputs into source tree
+	$(Q) ln -sf $(REPO_ROOT)/build/gopal-krishna-saxena/data/albums-resolved.json gopal-krishna-saxena/data/albums-resolved.json
+	$(Q) ln -sf $(REPO_ROOT)/build/gopal-krishna-saxena/media/album-covers gopal-krishna-saxena/media/album-covers
+
+build: fetch-albums link-build
+	@## build (fetch albums, link outputs)
 
 serve: build
 	@## build & start local dev server

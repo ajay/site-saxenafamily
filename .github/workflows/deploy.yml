@@ -28,6 +28,10 @@ jobs:
           python-version: '3.12'
       - name: Fetch album titles
         run: python3 scripts/fetch-album-titles.py
+      - name: Copy build outputs
+        run: |
+          cp -r build/gopal-krishna-saxena/data/* gopal-krishna-saxena/data/
+          cp -r build/gopal-krishna-saxena/media/* gopal-krishna-saxena/media/
       - uses: actions/configure-pages@v4
       - uses: actions/upload-pages-artifact@v3
         with:
