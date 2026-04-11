@@ -26,8 +26,8 @@ document.addEventListener('DOMContentLoaded', function () {
     sections.forEach(function (section) { observer.observe(section); });
   }
 
-  // -- Bhajan expand / collapse --
-  var chapterCache = {};
+  // -- Expand / collapse with lazy loading --
+  var contentCache = {};
 
   document.querySelectorAll('.bhajan-header').forEach(function (header) {
     header.addEventListener('click', function () {
@@ -37,20 +37,33 @@ document.addEventListener('DOMContentLoaded', function () {
 
       // Lazy load Garuda Purana chapters
       var chapter = card.getAttribute('data-chapter');
-      if (chapter && expanded && !chapterCache[chapter]) {
+      if (chapter && expanded && !contentCache['ch-' + chapter]) {
         var placeholder = card.querySelector('.lazy-load-placeholder');
         if (placeholder) {
           placeholder.textContent = 'Loading...';
-          fetch('data/garuda-purana/chapter-' + chapter + '.json')
+          fetch('data/garuda-purana/chapter-' + chapter.padStart(2, '0') + '.json')
             .then(function (r) { return r.json(); })
             .then(function (data) {
-              chapterCache[chapter] = true;
-              var content = card.querySelector('.bhajan-content');
-              content.innerHTML = renderChapter(data);
+              contentCache['ch-' + chapter] = true;
+              card.querySelector('.bhajan-content').innerHTML = renderVerses(data);
             })
-            .catch(function () {
-              placeholder.textContent = 'Failed to load chapter.';
-            });
+            .catch(function () { placeholder.textContent = 'Failed to load.'; });
+        }
+      }
+
+      // Lazy load bhajans
+      var bhajan = card.getAttribute('data-bhajan');
+      if (bhajan && expanded && !contentCache['bh-' + bhajan]) {
+        var placeholder = card.querySelector('.lazy-load-placeholder');
+        if (placeholder) {
+          placeholder.textContent = 'Loading...';
+          fetch('data/bhajans/' + bhajan + '.json')
+            .then(function (r) { return r.json(); })
+            .then(function (data) {
+              contentCache['bh-' + bhajan] = true;
+              card.querySelector('.bhajan-content').innerHTML = renderBhajan(data);
+            })
+            .catch(function () { placeholder.textContent = 'Failed to load.'; });
         }
       }
     });
@@ -63,14 +76,10 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  function renderChapter(data) {
-    var html = '';
-    if (data.context) {
-      html += '<div class="bhajan-context">' + data.context + '</div>';
-    }
-    html += '<div class="bhajan-columns">';
-    html += '<div class="columns-header"><h4>Sanskrit</h4><h4>Transliteration</h4><h4>Translation</h4></div>';
-    data.verses.forEach(function (v) {
+  function renderVersePairs(verses, colLabel) {
+    var html = '<div class="bhajan-columns">';
+    html += '<div class="columns-header"><h4>' + colLabel + '</h4><h4>Transliteration</h4><h4>Translation</h4></div>';
+    verses.forEach(function (v) {
       html += '<div class="verse-pair">';
       html += '<div class="verse-hindi" lang="hi">' + v.hindi.replace(/\n/g, '<br>') + '</div>';
       html += '<div class="verse-transliteration">' + v.transliteration.replace(/\n/g, '<br>') + '</div>';
@@ -79,6 +88,52 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     html += '</div>';
     return html;
+  }
+
+  function renderVerses(data) {
+    var html = '';
+    if (data.context) html += '<div class="bhajan-context">' + data.context + '</div>';
+    html += renderVersePairs(data.verses, data.first_column_label || 'Sanskrit');
+    return html;
+  }
+
+  function renderBhajan(data) {
+    var html = '';
+    if (data.context) html += '<div class="bhajan-context">' + data.context + '</div>';
+    var colLabel = data.first_column_label || 'Hindi';
+    if (data.sections) {
+      data.sections.forEach(function (sec) {
+        html += renderVersePairs(sec.verses, sec.label || colLabel);
+      });
+    } else {
+      html += renderVersePairs(data.verses, colLabel);
+    }
+    if (data.sources && data.sources.length) {
+      html += '<div class="bhajan-sources">References: ';
+      html += data.sources.map(function (s) {
+        return '<a href="' + s.url + '" target="_blank" rel="noopener">' + s.label + '</a>';
+      }).join(' | ');
+      html += '</div>';
+    }
+    return html;
+  }
+
+  // -- Load photo albums from JSON --
+  var albumGrid = document.getElementById('album-grid');
+  if (albumGrid) {
+    fetch('data/albums.json')
+      .then(function (r) { return r.json(); })
+      .then(function (albums) {
+        albums.forEach(function (album) {
+          var a = document.createElement('a');
+          a.className = 'album-card';
+          a.href = album.url;
+          a.target = '_blank';
+          a.rel = 'noopener';
+          a.innerHTML = '<h3>' + album.title + '</h3><span class="album-link-text">View on Google Photos</span>';
+          albumGrid.appendChild(a);
+        });
+      });
   }
 
   // -- Photo lightbox --

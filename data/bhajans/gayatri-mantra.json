@@ -1,0 +1,19 @@
+{
+  "title_hi": "गायत्री मन्त्र",
+  "title_en": "Gayatri Mantra",
+  "context": "One of the most sacred mantras in Hinduism, from the Rigveda (3.62.10). Attributed to Rishi Vishvamitra, it addresses the solar deity Savitri and is a prayer for intellectual and spiritual illumination. Often called the \"Mother of the Vedas.\" Traditionally recited at dawn, noon, and dusk during sandhyavandana.",
+  "first_column_label": "Sanskrit",
+  "verses": [
+    {
+      "hindi": "ॐ भूर्भुवः स्वः\n\n                        तत्सवितुर्वरेण्यं\n\n                        भर्गो देवस्य धीमहि\n\n                        धियो यो नः प्रचोदयात्॥",
+      "transliteration": "Om Bhur Bhuvah Svah\nTat Savitur Varenyam\nBhargo Devasya Dhimahi\nDhiyo Yo Nah Prachodayat",
+      "translation": "Om, the sacred sound, across the earth, atmosphere, and heavens,\nwe meditate upon the most adorable\nradiance of the Divine Creator (Savitri).\nMay that divine light illuminate and inspire our intellects."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Gayatri_Mantra"
+    }
+  ]
+}
