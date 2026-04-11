@@ -27,11 +27,32 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // -- Bhajan expand / collapse --
+  var chapterCache = {};
+
   document.querySelectorAll('.bhajan-header').forEach(function (header) {
     header.addEventListener('click', function () {
       var card = header.closest('.bhajan-card');
       var expanded = card.classList.toggle('expanded');
       header.setAttribute('aria-expanded', expanded);
+
+      // Lazy load Garuda Purana chapters
+      var chapter = card.getAttribute('data-chapter');
+      if (chapter && expanded && !chapterCache[chapter]) {
+        var placeholder = card.querySelector('.lazy-load-placeholder');
+        if (placeholder) {
+          placeholder.textContent = 'Loading...';
+          fetch('data/garuda-purana/chapter-' + chapter + '.json')
+            .then(function (r) { return r.json(); })
+            .then(function (data) {
+              chapterCache[chapter] = true;
+              var content = card.querySelector('.bhajan-content');
+              content.innerHTML = renderChapter(data);
+            })
+            .catch(function () {
+              placeholder.textContent = 'Failed to load chapter.';
+            });
+        }
+      }
     });
 
     header.addEventListener('keydown', function (e) {
@@ -41,6 +62,24 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   });
+
+  function renderChapter(data) {
+    var html = '';
+    if (data.context) {
+      html += '<div class="bhajan-context">' + data.context + '</div>';
+    }
+    html += '<div class="bhajan-columns">';
+    html += '<div class="columns-header"><h4>Sanskrit</h4><h4>Transliteration</h4><h4>Translation</h4></div>';
+    data.verses.forEach(function (v) {
+      html += '<div class="verse-pair">';
+      html += '<div class="verse-hindi" lang="hi">' + v.hindi.replace(/\n/g, '<br>') + '</div>';
+      html += '<div class="verse-transliteration">' + v.transliteration.replace(/\n/g, '<br>') + '</div>';
+      html += '<div class="verse-translation">' + v.translation.replace(/\n/g, '<br>') + '</div>';
+      html += '</div>';
+    });
+    html += '</div>';
+    return html;
+  }
 
   // -- Photo lightbox --
   var lightbox = document.getElementById('lightbox');

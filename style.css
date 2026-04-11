@@ -379,6 +379,13 @@ body {
   color: var(--color-text-muted);
 }
 
+.lazy-load-placeholder {
+  text-align: center;
+  padding: 2rem;
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+
 /* Bhajan sources */
 .bhajan-sources {
   margin-top: 1.25rem;

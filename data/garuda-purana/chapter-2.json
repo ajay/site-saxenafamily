@@ -1,0 +1,123 @@
+{
+  "chapter": 2,
+  "title_hi": "यम यातनाओं का वर्णन",
+  "title_en": "The Torments of Yama",
+  "context": "Lord Vishnu describes to Garuda the various hells (narakas) and the specific torments endured by sinful souls in Yama's realm. Each punishment corresponds to particular sins committed during earthly life, illustrating the inexorable law of karma.",
+  "verses": [
+    {
+      "hindi": "श्रीगरुड उवाच —\nयमलोके तु यातनाः काः पापानां भवन्ति हि ।\nकेन पापेन किं दुःखं वद मे मधुसूदन ॥",
+      "transliteration": "Śrī Garuḍa uvāca —\nYamaloke tu yātanāḥ kāḥ pāpānāṃ bhavanti hi |\nkena pāpena kiṃ duḥkhaṃ vada me Madhusūdana ||",
+      "translation": "Garuda said: What are the torments that befall sinners in the realm of Yama? By which sin does which suffering arise? Tell me, O Madhusudana."
+    },
+    {
+      "hindi": "श्रीभगवानुवाच —\nनरकाणां सहस्राणि लक्षाणि नियुतानि च ।\nअष्टाविंशतिमुख्यानि तेषां वक्ष्यामि लक्षणम् ॥",
+      "transliteration": "Śrī Bhagavān uvāca —\nNarakāṇāṃ sahasrāṇi lakṣāṇi niyutāni ca |\naṣṭāviṃśatimukhyāni teṣāṃ vakṣyāmi lakṣaṇam ||",
+      "translation": "The Lord said: There are thousands, hundreds of thousands, and millions of hells. Of the twenty-eight principal ones, I shall describe the characteristics."
+    },
+    {
+      "hindi": "तामिस्रमन्धतामिस्रं रौरवं महारौरवम् ।\nकुम्भीपाकं कालसूत्रमसिपत्रवनं तथा ॥",
+      "transliteration": "Tāmisram andhatāmisraṃ Rauravaṃ Mahārauravam |\nKumbhīpākaṃ Kālasūtram Asipatravanṃ tathā ||",
+      "translation": "Tamisra, Andhatamisra, Raurava, Maharaurava, Kumbhipaka, Kalasutra, and Asipatravana — these are among them."
+    },
+    {
+      "hindi": "सूकरमुखं तथान्धकूपं कृमिभोजनमेव च ।\nसन्दंशो लालाभक्षश्च पूयोदो रुधिरान्धकम् ॥",
+      "transliteration": "Sūkaramukhaṃ tathāndhakūpaṃ kṛmibhojanam eva ca |\nSandaṃśo Lālābhakṣaśca Pūyodo Rudhirāndhakam ||",
+      "translation": "Sukaramukha, Andhakupa, Krimibhojana, Sandamsha, Lalabhaksha, Puyoda, and Rudhirandhaka."
+    },
+    {
+      "hindi": "तामिस्रे तु नरा ये वै परधनापहारिणः ।\nतमसा परिवेष्ट्यन्ते ताड्यमानाः सुदारुणम् ॥",
+      "transliteration": "Tāmisre tu narā ye vai paradhanāpahāriṇaḥ |\ntamasā pariveṣṭyante tāḍyamānāḥ sudāruṇam ||",
+      "translation": "In Tamisra (Dense Darkness), those who steal others' wealth are enveloped in darkness and beaten most cruelly."
+    },
+    {
+      "hindi": "अन्धतामिस्रके घोरे परदारापहारिणः ।\nअन्धकारेण महता बध्यन्ते चक्षुषो हताः ॥",
+      "transliteration": "Andhatāmisrake ghore paradārāpahāriṇaḥ |\nandhakāreṇa mahatā badhyante cakṣuṣo hatāḥ ||",
+      "translation": "In the terrible Andhatamisra (Blinding Darkness), those who violate others' wives are bound in great darkness, their eyes destroyed."
+    },
+    {
+      "hindi": "रौरवे तु नरा ये वै मिथ्यासाक्षिप्रदायिनः ।\nरुरुभिर्दारुणैर्भक्ष्या भवन्ति ज्वलदग्निभिः ॥",
+      "transliteration": "Raurave tu narā ye vai mithyāsākṣipradāyinaḥ |\nrurubhir dāruṇair bhakṣyā bhavanti jvaladagnibhiḥ ||",
+      "translation": "In Raurava, those who bear false witness are devoured by fierce creatures called rurus, amidst blazing fire."
+    },
+    {
+      "hindi": "महारौरवे पतन्त्येते ये वै गोब्राह्मणघातकाः ।\nतप्ततामतिशायिन्यो यातनास्तत्र भो खग ॥",
+      "transliteration": "Mahāraurave patanty ete ye vai gobrāhmaṇaghātakāḥ |\ntaptatām atiśāyinyo yātanāstatra bho khaga ||",
+      "translation": "Into Maharaurava fall those who slay cows or brahmanas. The torments there surpass even heated iron, O Bird."
+    },
+    {
+      "hindi": "कुम्भीपाके पतन्त्येते पशुहिंसारता नराः ।\nतैलपूर्णे च कुम्भे तु पच्यन्ते काले तु दारुणे ॥",
+      "transliteration": "Kumbhīpāke patanty ete paśuhiṃsāratā narāḥ |\ntailapūrṇe ca kumbhe tu pacyante kāle tu dāruṇe ||",
+      "translation": "Into Kumbhipaka (Pot-cooking) fall those who delight in slaughtering animals. They are boiled in cauldrons full of oil for a terrible duration."
+    },
+    {
+      "hindi": "कालसूत्रे पतन्त्येते पितृमातृविरोधिनः ।\nतप्तभूमौ शयाना ये पच्यन्ते दीर्घकालतः ॥",
+      "transliteration": "Kālasūtre patanty ete pitṛmātṛvirodhinaḥ |\ntaptabhūmau śayānā ye pacyante dīrghakālataḥ ||",
+      "translation": "Into Kalasutra fall those who oppose their parents. Lying on burning ground, they are scorched for an immense span of time."
+    },
+    {
+      "hindi": "असिपत्रवने घोरे वृक्षच्छेदनकारिणः ।\nखड्गपत्रैश्च वृक्षाणां छिद्यन्ते सर्वतो दिशम् ॥",
+      "transliteration": "Asipatravane ghore vṛkṣacchedanakāriṇaḥ |\nkhaḍgapatraiśca vṛkṣāṇāṃ chidyante sarvato diśam ||",
+      "translation": "In the terrible Asipatravana (Forest of Sword-leaves), those who wantonly fell trees are cut on all sides by the sword-like leaves of the trees."
+    },
+    {
+      "hindi": "सूकरमुखे पतन्त्येते न्यायदण्डविलोपकाः ।\nसूकरैर्भक्ष्यमाणास्ते रुदन्ति विलपन्ति च ॥",
+      "transliteration": "Sūkaramukhe patanty ete nyāyadaṇḍavilopakāḥ |\nsūkarair bhakṣyamāṇāste rudanti vilapanti ca ||",
+      "translation": "Into Sukaramukha (Hog's Mouth) fall those who pervert justice. Devoured by hogs, they weep and wail."
+    },
+    {
+      "hindi": "अन्धकूपे पतन्त्येते ये निरीहं हिनस्ति यः ।\nकीटाहिवृश्चिकादीनां भक्ष्यन्ते तेऽन्धके कुले ॥",
+      "transliteration": "Andhakūpe patanty ete ye nirīhaṃ hinasti yaḥ |\nkīṭāhivṛścikādīnāṃ bhakṣyante te'ndhake kule ||",
+      "translation": "Into Andhakupa (Dark Well) fall those who harm the innocent. They are devoured by insects, serpents, scorpions, and such creatures in the dark abyss."
+    },
+    {
+      "hindi": "कृमिभोजने पतन्त्येते ये परान्नमपेक्षिणः ।\nकृमियोनिं गतास्तत्र कृमीनां भोजनं भवेत् ॥",
+      "transliteration": "Kṛmibhojane patanty ete ye parānnam apekṣiṇaḥ |\nkṛmiyoniṃ gatāstatra kṛmīnāṃ bhojanaṃ bhavet ||",
+      "translation": "Into Krimibhojana (Worm-food) fall those who live by exploiting others' food. Born into the worm species, they become food for worms."
+    },
+    {
+      "hindi": "सन्दंशे तु पतन्त्येते ये चौराः परतापिनः ।\nतप्तसन्दंशकैस्तत्र दह्यन्ते पापकारिणः ॥",
+      "transliteration": "Sandaṃśe tu patanty ete ye caurāḥ paratāpinaḥ |\ntaptasandaṃśakaistatra dahyante pāpakāriṇaḥ ||",
+      "translation": "Into Sandamsha (Pincers) fall thieves who torment others. With red-hot pincers they are burned, those doers of sin."
+    },
+    {
+      "hindi": "लालाभक्षे पतन्त्येते ये भर्तारं विडम्बयन् ।\nस्वलालां भक्षयन्त्येते पतिता यातनार्णवे ॥",
+      "transliteration": "Lālābhakṣe patanty ete ye bhartāraṃ viḍambayan |\nsvalālāṃ bhakṣayanty ete patitā yātanārṇave ||",
+      "translation": "Into Lalabhaksha (Saliva-eating) fall those who mock their husbands or lords. Fallen into the ocean of torment, they are made to eat their own saliva."
+    },
+    {
+      "hindi": "पूयोदके निमज्जन्ते ये मद्यपानरता नराः ।\nपूयशोणितपूर्णे च कूपे ते निपतन्ति हि ॥",
+      "transliteration": "Pūyodake nimajjante ye madyapānaratā narāḥ |\npūyaśoṇitapūrṇe ca kūpe te nipatanti hi ||",
+      "translation": "In Puyoda (Pus-water) are submerged those who are addicted to drinking liquor. They fall into a pit filled with pus and blood."
+    },
+    {
+      "hindi": "वैतरण्यां पतन्त्येते ये धर्मं नावलम्बयन् ।\nपूयरक्ताम्बुपूर्णायां नद्यां दुःखेन तीर्यते ॥",
+      "transliteration": "Vaitaraṇyāṃ patanty ete ye dharmaṃ nāvalambayan |\npūyaraktāmbupūrṇāyāṃ nadyāṃ duḥkhena tīryate ||",
+      "translation": "Into the Vaitarani fall those who do not uphold dharma. In that river filled with pus, blood, and water, they cross only with great suffering."
+    },
+    {
+      "hindi": "एवं बहुविधा घोरा नरका यातनान्विताः ।\nपापिनस्तत्र पच्यन्ते यावदाभूतसम्प्लवम् ॥",
+      "transliteration": "Evaṃ bahuvidhā ghorā narakā yātanānvitāḥ |\npāpinaḥ tatra pacyante yāvad ābhūtasamplavam ||",
+      "translation": "Thus there are many kinds of terrible hells filled with torments. Sinners are scorched therein until the dissolution of the elements."
+    },
+    {
+      "hindi": "यावत् पापं कृतं तावत् तावत् काले तु पच्यते ।\nन क्षयो विद्यते तत्र यावत् कर्मक्षयो भवेत् ॥",
+      "transliteration": "Yāvat pāpaṃ kṛtaṃ tāvat tāvat kāle tu pacyate |\nna kṣayo vidyate tatra yāvat karmakṣayo bhavet ||",
+      "translation": "For as long as the accumulated sin endures, for that duration one is tormented. There is no release until the karma is fully exhausted."
+    },
+    {
+      "hindi": "तस्मात् सर्वप्रयत्नेन पापं त्यक्त्वा सदा नरः ।\nधर्ममाचरते यस्तु नरकं स न पश्यति ॥",
+      "transliteration": "Tasmāt sarvaprayatnena pāpaṃ tyaktvā sadā naraḥ |\ndharmam ācarate yastu narakaṃ sa na paśyati ||",
+      "translation": "Therefore, with every effort, one should always abandon sin. He who practices dharma never beholds hell."
+    },
+    {
+      "hindi": "विष्णुभक्तो न याति स्म यमलोकं कदाचन ।\nनारायणपरा मुक्ता नरकाद् भयवर्जिताः ॥",
+      "transliteration": "Viṣṇubhakto na yāti sma yamalokaṃ kadācana |\nNārāyaṇaparā muktā narakād bhayavarjitāḥ ||",
+      "translation": "A devotee of Vishnu never goes to Yama's realm. Those devoted to Narayana are freed from hell and liberated from fear."
+    },
+    {
+      "hindi": "श्रीभगवानुवाच —\nइति ते कथिताः सर्वा नरकाः पापनाशनाः ।\nश्रवणात् पठनात् चैव मुच्यते सर्वकिल्बिषैः ॥",
+      "transliteration": "Śrī Bhagavān uvāca —\nIti te kathitāḥ sarvā narakāḥ pāpanāśanāḥ |\nśravaṇāt paṭhanāt caiva mucyate sarvakilbiṣaiḥ ||",
+      "translation": "The Lord said: Thus I have described to you all the hells that destroy sin. By hearing and reciting this, one is freed from all transgressions."
+    }
+  ]
+}

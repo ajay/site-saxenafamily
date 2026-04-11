@@ -1,0 +1,128 @@
+{
+  "chapter": 14,
+  "title_hi": "यम गीता",
+  "title_en": "The Yama Gita",
+  "context": "This chapter presents the Yama Gita, the philosophical song of Yama, the God of Death. It contains Yama's teachings on dharma, the imperishable nature of the soul, the impermanence of the body and worldly attachments, and the supreme importance of righteous living as the means to transcend death and suffering.",
+  "verses": [
+    {
+      "hindi": "गरुड उवाच —\nयमेन कथिता गीता श्रूयतां गदतो मम।\nधर्मराजस्य वचनं सर्वपापप्रणाशनम्॥",
+      "transliteration": "Garuḍa uvāca —\nYamena kathitā Gītā śrūyatāṁ gadato mama,\nDharmarājasya vacanaṁ sarvapāpapraṇāśanam.",
+      "translation": "Garuda said: Hear from me the Gita spoken by Yama. The words of the King of Dharma destroy all sins."
+    },
+    {
+      "hindi": "श्रीभगवानुवाच —\nयमो वैवस्वतो देवो यस्तवैष प्रकीर्तितः।\nधर्मराजो महाबाहुः सत्यसन्धो जितेन्द्रियः॥",
+      "transliteration": "Śrī Bhagavān uvāca —\nYamo Vaivasvato devo yas tavaiṣa prakīrtitaḥ,\nDharmarājo mahābāhuḥ satyasandho jitendriyaḥ.",
+      "translation": "The Blessed Lord said: Yama, the son of Vivasvan, is the deity whom I have described to you — the King of Dharma, mighty-armed, truthful in resolve, and master of his senses."
+    },
+    {
+      "hindi": "यम उवाच —\nधर्म एव परो लोके धर्मे सर्वं प्रतिष्ठितम्।\nधर्मेण क्रियते सर्वं यद्यत् पश्यति चक्षुषा॥",
+      "transliteration": "Yama uvāca —\nDharma eva paro loke dharme sarvaṁ pratiṣṭhitam,\ndharmeṇa kriyate sarvaṁ yad yat paśyati cakṣuṣā.",
+      "translation": "Yama said: Dharma alone is supreme in this world; everything is established in dharma. By dharma is accomplished all that the eye beholds."
+    },
+    {
+      "hindi": "शरीरमाद्यं खलु धर्मसाधनम्\nइति स्मृत्वा तत्र धर्मं समाचरेत्।\nशरीरं क्षणभङ्गुरं नरस्य\nधर्मस्तु नित्यं न च नश्वरः क्वचित्॥",
+      "transliteration": "Śarīram ādyaṁ khalu dharmasādhanam\niti smṛtvā tatra dharmaṁ samācaret,\nśarīraṁ kṣaṇabhaṅguraṁ narasya\ndharmas tu nityaṁ na ca naśvaraḥ kvacit.",
+      "translation": "The body is indeed the primary instrument for dharma — remembering this, one should practice righteousness. The body of a man is momentary and fragile, but dharma is eternal and never perishes."
+    },
+    {
+      "hindi": "न जायते म्रियते वा कदाचित्\nनायं भूत्वा भविता वा न भूयः।\nअजो नित्यः शाश्वतोऽयं पुराणो\nन हन्यते हन्यमाने शरीरे॥",
+      "transliteration": "Na jāyate mriyate vā kadācit\nnāyaṁ bhūtvā bhavitā vā na bhūyaḥ,\najo nityaḥ śāśvato'yaṁ purāṇo\nna hanyate hanyamāne śarīre.",
+      "translation": "The soul is never born, nor does it ever die. Having come into being, it does not cease to exist. Unborn, eternal, everlasting, and ancient — it is not slain when the body is slain."
+    },
+    {
+      "hindi": "वासांसि जीर्णानि यथा विहाय\nनवानि गृह्णाति नरोऽपराणि।\nतथा शरीराणि विहाय जीर्णानि\nअन्यानि संयाति नवानि देही॥",
+      "transliteration": "Vāsāṁsi jīrṇāni yathā vihāya\nnavāni gṛhṇāti naro'parāṇi,\ntathā śarīrāṇi vihāya jīrṇāni\nanyāni saṁyāti navāni dehī.",
+      "translation": "Just as a person discards worn-out garments and puts on new ones, so does the embodied soul cast off worn-out bodies and enter others that are new."
+    },
+    {
+      "hindi": "नैनं छिन्दन्ति शस्त्राणि नैनं दहति पावकः।\nन चैनं क्लेदयन्त्यापो न शोषयति मारुतः॥",
+      "transliteration": "Nainaṁ chindanti śastrāṇi nainaṁ dahati pāvakaḥ,\nna cainaṁ kledayanty āpo na śoṣayati mārutaḥ.",
+      "translation": "Weapons do not cleave this soul, fire does not burn it, waters do not wet it, and the wind does not dry it."
+    },
+    {
+      "hindi": "अध्रुवेण शरीरेण प्राणिनां धर्ममाचरेत्।\nध्रुवं हित्वा अध्रुवं गृह्णन् मूढो जन्ममरणैर्भ्रमेत्॥",
+      "transliteration": "Adhruveṇa śarīreṇa prāṇināṁ dharmam ācaret,\ndhruvaṁ hitvā adhruvaṁ gṛhṇan mūḍho janmamaraṇair bhramet.",
+      "translation": "With this impermanent body, living beings should practice dharma. The fool who abandons the permanent and grasps the impermanent wanders through the cycle of birth and death."
+    },
+    {
+      "hindi": "यथा ह्यग्निं प्रकाशं च समिद्भिरभिधीयते।\nतथा ज्ञानाग्निना देही कर्मबन्धात् प्रमुच्यते॥",
+      "transliteration": "Yathā hy agniṁ prakāśaṁ ca samibhir abhidhīyate,\ntathā jñānāgninā dehī karmabandāt pramucyate.",
+      "translation": "Just as fire is kindled and its light revealed by fuel, so is the embodied soul liberated from the bondage of karma by the fire of knowledge."
+    },
+    {
+      "hindi": "अहिंसा सत्यमस्तेयं शौचमिन्द्रियनिग्रहः।\nदानं दमो दया शान्तिः सर्वेषां धर्मसाधनम्॥",
+      "transliteration": "Ahiṁsā satyam asteyaṁ śaucam indriyannigrahaḥ,\ndānaṁ damo dayā śāntiḥ sarveṣāṁ dharmasādhanam.",
+      "translation": "Non-violence, truthfulness, non-stealing, purity, and control of the senses; charity, self-restraint, compassion, and peace — these are the means of dharma for all beings."
+    },
+    {
+      "hindi": "कामक्रोधौ तथा लोभं मदमोहौ च मत्सरम्।\nत्यक्त्वा सर्वं विकारं हि ज्ञानवान् मुच्यते नरः॥",
+      "transliteration": "Kāmakrodhau tathā lobhaṁ madamohau ca matsaram,\ntyaktvā sarvaṁ vikāraṁ hi jñānavān mucyate naraḥ.",
+      "translation": "Having abandoned lust, anger, greed, pride, delusion, and envy — giving up all mental distortions — the wise man is liberated."
+    },
+    {
+      "hindi": "मम लोकं न पश्यन्ति ये धर्मपरिपालकाः।\nते यान्ति परमं स्थानं यत्र गत्वा न शोचति॥",
+      "transliteration": "Mama lokaṁ na paśyanti ye dharmaparipālakāḥ,\nte yānti paramaṁ sthānaṁ yatra gatvā na śocati.",
+      "translation": "Those who uphold dharma never see my realm (the realm of death). They attain the supreme abode, reaching which one grieves no more."
+    },
+    {
+      "hindi": "न मे प्रियश्चाप्रियो वा कश्चित्\nसमो हि सर्वेषु च जन्तुषु अहम्।\nकर्मानुसारेण फलं ददामि\nन मत्कृतं दुःखमिदं हि लोके॥",
+      "transliteration": "Na me priyaś cāpriyo vā kaścit\nsamo hi sarveṣu ca jantuṣu aham,\nkarmānusāreṇa phalaṁ dadāmi\nna matkṛtaṁ duḥkham idaṁ hi loke.",
+      "translation": "No one is dear or hateful to me; I am equal toward all living beings. I give the fruits according to one's own karma — the suffering in this world is not caused by me."
+    },
+    {
+      "hindi": "स्वयं कृतं कर्म नरो ह्यनुभवेत्\nन कर्मणां लिप्यति कर्ता अन्यः।\nतस्मात् सदा कर्म शुभं समाचरेत्\nअशुभं कर्म विवर्जयेत्॥",
+      "transliteration": "Svayaṁ kṛtaṁ karma naro hy anubhaved\nna karmaṇāṁ lipyati kartā anyaḥ,\ntasmāt sadā karma śubhaṁ samācaret\naśubhaṁ karma vivarjayed.",
+      "translation": "A man himself experiences the karma he has created; no other agent is tainted by his actions. Therefore, one should always perform auspicious deeds and shun inauspicious ones."
+    },
+    {
+      "hindi": "मृत्युना हि सदा लोकः समन्तात् परिवेष्टितः।\nजरया व्याधिभिश्चैव दुःखैश्चान्यैः समावृतः॥",
+      "transliteration": "Mṛtyunā hi sadā lokaḥ samantāt pariveṣṭitaḥ,\njarayā vyādhibhiś caiva duḥkhaiś cānyaiḥ samāvṛtaḥ.",
+      "translation": "This world is always encircled by death on all sides, and is surrounded by old age, disease, and manifold sorrows."
+    },
+    {
+      "hindi": "एतद् विदित्वा मेधावी धर्ममेव समाश्रयेत्।\nधर्मो हि एको अनुगच्छति प्राणिनं\nसर्वमन्यत् स्वजनबान्धवं च नश्यति॥",
+      "transliteration": "Etad viditvā medhāvī dharmam eva samāśrayed,\ndharmo hi eko anugacchati prāṇinaṁ\nsarvam anyat svajanabāndhavaṁ ca naśyati.",
+      "translation": "Knowing this, the intelligent person should take refuge in dharma alone. For dharma alone follows a being after death; everything else — family and kinsmen — perishes."
+    },
+    {
+      "hindi": "न बान्धवाः पुत्रकलत्रमित्राः\nन संचितं रत्नधनं च किञ्चित्।\nमृतं शरीरं प्रतिगृह्य गच्छन्ति\nधर्म एकोऽनुगतः सदैव॥",
+      "transliteration": "Na bāndhavāḥ putrakalatramnitrāḥ\nna saṁcitaṁ ratnadhanaṁ ca kiñcit,\nmṛtaṁ śarīraṁ pratigṛhya gacchanti\ndharma eko'nugataḥ sadaiva.",
+      "translation": "Neither kinsmen, sons, wife, nor friends, nor accumulated jewels and wealth — none accompany the dead body. Only dharma follows one forever."
+    },
+    {
+      "hindi": "एकः प्रजायते जन्तुरेक एव प्रलीयते।\nएकोऽनुभुङ्क्ते सुकृतमेक एव च दुष्कृतम्॥",
+      "transliteration": "Ekaḥ prajāyate jantur eka eva pralīyate,\neko'nubhuṅkte sukṛtam eka eva ca duṣkṛtam.",
+      "translation": "A being is born alone and dies alone. Alone one experiences the fruits of good deeds, and alone one suffers the consequences of evil deeds."
+    },
+    {
+      "hindi": "अजरं चामरं चैव प्राप्नुवन्ति मनीषिणः।\nये धर्ममनुतिष्ठन्ति सदा शुभपरायणाः॥",
+      "transliteration": "Ajaraṁ cāmaraṁ caiva prāpnuvanti manīṣiṇaḥ,\nye dharmam anutiṣṭhanti sadā śubhaparāyaṇāḥ.",
+      "translation": "The wise who steadfastly follow dharma and are ever devoted to auspicious conduct attain that which is free from old age and death."
+    },
+    {
+      "hindi": "तस्मात् सर्वप्रयत्नेन धर्ममाचरेत सुव्रताः।\nधर्मेण हीनाः पशुभिः समानाः\nधर्मेण हीनाः मृतैश्च तुल्याः॥",
+      "transliteration": "Tasmāt sarvaprayatnena dharmam ācaret suvratāḥ,\ndharmeṇa hīnāḥ paśubhiḥ samānāḥ\ndharmeṇa hīnāḥ mṛtaiś ca tulyāḥ.",
+      "translation": "Therefore, O virtuous ones, practice dharma with all effort. Those devoid of dharma are equal to animals; those without dharma are no different from the dead."
+    },
+    {
+      "hindi": "सत्यं ब्रूयात् प्रियं ब्रूयात् न ब्रूयात् सत्यमप्रियम्।\nएष धर्मः सनातनो यमेन कथितो नृणाम्॥",
+      "transliteration": "Satyaṁ brūyāt priyaṁ brūyāt na brūyāt satyam apriyam,\neṣa dharmaḥ sanātano Yamena kathito nṛṇām.",
+      "translation": "Speak the truth, speak pleasantly, but do not speak truth that is unpleasant (when avoidable). This is the eternal dharma declared by Yama to mankind."
+    },
+    {
+      "hindi": "परोपकारः पुण्याय पापाय परपीडनम्।\nइति यामी वचः श्रेष्ठं मोक्षमार्गप्रदर्शकम्॥",
+      "transliteration": "Paropakāraḥ puṇyāya pāpāya parapīḍanam,\niti Yāmī vacaḥ śreṣṭhaṁ mokṣamārgapradarśakam.",
+      "translation": "Helping others leads to merit, and harming others leads to sin. This is the supreme teaching of Yama, pointing the way to liberation."
+    },
+    {
+      "hindi": "यमगीतामिमां पुण्यां यः पठेत् श्रद्धयान्वितः।\nयमलोकभयं त्यक्त्वा विष्णुलोकं स गच्छति॥",
+      "transliteration": "Yamagītām imāṁ puṇyāṁ yaḥ paṭhet śraddhayānvitaḥ,\nYamaloakbhayaṁ tyaktvā Viṣṇulokaṁ sa gacchati.",
+      "translation": "He who reads this holy Yama Gita with faith, casting aside the fear of Yama's realm, attains the abode of Vishnu."
+    },
+    {
+      "hindi": "इति श्रीगरुडपुराणे सारोद्धारे यमगीता\nनाम चतुर्दशोऽध्यायः॥",
+      "transliteration": "Iti Śrī Garuḍa Purāṇe Sāroddhāre Yamagītā\nnāma caturdaśo'dhyāyaḥ.",
+      "translation": "Thus ends the fourteenth chapter, entitled 'The Yama Gita,' in the Saroddhara of the Shri Garuda Purana."
+    }
+  ]
+}
