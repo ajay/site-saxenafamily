@@ -160,7 +160,12 @@ document.addEventListener('DOMContentLoaded', function () {
     fetch('data/albums-resolved.json')
       .then(function (r) { return r.json(); })
       .then(function (albums) {
-        albums.sort(function (a, b) { return a.title.localeCompare(b.title); });
+        albums.sort(function (a, b) {
+          var aNum = /^\d/.test(a.title);
+          var bNum = /^\d/.test(b.title);
+          if (aNum !== bNum) return aNum ? 1 : -1;
+          return a.title.localeCompare(b.title);
+        });
         albums.forEach(function (album) {
           var a = document.createElement('a');
           a.className = 'album-card';
