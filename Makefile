@@ -1,14 +1,14 @@
 ################################################################################
 
-# Copied from build-tools repo-init.mk reference implementation.
-# https://github.com/ajay/build-tools/blob/main/makefiles/repo-init.mk
+# Copied from build-tools repo.mk reference implementation.
+# https://github.com/ajay/build-tools/blob/main/makefiles/repo.mk
 # Keep in sync with the reference when updating.
 
 REPO_ROOT := $(shell git rev-parse --show-toplevel)
 
-# Path to repo-init.mk — used as existence check for whether submodules
+# Path to repo.mk — used as existence check for whether submodules
 # are initialized. Update this path to match your submodule layout.
-REPO_INIT_CHECK := $(REPO_ROOT)/tools/site-common/tools/build-tools/makefiles/repo-init.mk
+REPO_INIT_CHECK := $(REPO_ROOT)/tools/site-common/tools/build-tools/makefiles/repo.mk
 
 repo-init:
 	@## initialize git submodules
