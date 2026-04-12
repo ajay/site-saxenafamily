@@ -8,57 +8,8 @@ repo-init:
 	git submodule update --init --recursive
 
 ifneq ($(MAKECMDGOALS),repo-init)
-ifeq (,$(wildcard $(REPO_ROOT)/tools/build-tools/makefiles/help.mk))
-$(info )
-$(info Submodules not initialized. Run 'make repo-init' first.)
-$(info )
-$(error aborting)
+-include $(REPO_ROOT)/tools/site-common/makefiles/site.mk
 endif
-endif
-
-################################################################################
-
--include $(REPO_ROOT)/tools/build-tools/makefiles/help.mk
--include $(REPO_ROOT)/tools/build-tools/makefiles/functions.mk
-
-################################################################################
-
-SHELL := bash
-
-MAKEFLAGS += -rR                        # do not use make's built-in rules and variables
-MAKEFLAGS += -k                         # keep going on errors
-MAKEFLAGS += --warn-undefined-variables
-MAKEFLAGS += --no-print-directory
-
-################################################################################
-
-verbose ?= true
-
-ifeq ($(verbose), true)
-	Q :=
-else
-	Q := @
-endif
-
-################################################################################
-
-COMMIT := $(shell git rev-parse --short HEAD)
-PROJECT_NAME := $(notdir $(CURDIR))
-PYTHON := python3
-RM := rm -rf
-
-################################################################################
-
-$(info )
-$(info PROJECT = $(PROJECT_NAME))
-$(info COMMIT  = $(COMMIT))
-$(info )
-
-################################################################################
-
-.PHONY: help clean
-
-.DEFAULT_GOAL := help
 
 ################################################################################
 
@@ -75,9 +26,14 @@ fetch-albums:
 	$(Q) $(PYTHON) scripts/fetch-album-titles.py
 
 link-build:
-	@## symlink build outputs into source tree
+	@## copy/symlink build outputs into source tree
+ifdef CI
+	$(Q) cp -r build/gopal-krishna-saxena/data/* gopal-krishna-saxena/data/
+	$(Q) cp -r build/gopal-krishna-saxena/media/* gopal-krishna-saxena/media/
+else
 	$(Q) ln -sf $(REPO_ROOT)/build/gopal-krishna-saxena/data/albums-resolved.json gopal-krishna-saxena/data/albums-resolved.json
 	$(Q) ln -sf $(REPO_ROOT)/build/gopal-krishna-saxena/media/album-covers gopal-krishna-saxena/media/album-covers
+endif
 
 build: fetch-albums link-build
 	@## build (fetch albums, link outputs)
