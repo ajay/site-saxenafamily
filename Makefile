@@ -8,7 +8,7 @@ REPO_ROOT := $(shell git rev-parse --show-toplevel)
 
 # Path to repo.mk — used as existence check for whether submodules
 # are initialized. Update this path to match your submodule layout.
-REPO_INIT_CHECK := $(REPO_ROOT)/tools/site-common/tools/build-tools/makefiles/repo.mk
+REPO_INIT_CHECK := $(REPO_ROOT)/site-common/tools/build-tools/makefiles/repo.mk
 
 repo-init:
 	@## initialize git submodules
@@ -23,7 +23,7 @@ endif
 
 ################################################################################
 
--include $(REPO_ROOT)/tools/site-common/makefiles/site.mk
+-include $(REPO_ROOT)/site-common/makefiles/site.mk
 
 ################################################################################
 

@@ -1,3 +1,3 @@
-[submodule "tools/site-common"]
-	path = tools/site-common
+[submodule "site-common"]
+	path = site-common
 	url = git@github.com:ajay/site-common.git
