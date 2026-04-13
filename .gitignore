@@ -1,7 +1,3 @@
-.DS_Store
-*.swp
-*.swo
-*~
 build/
 gopal-krishna-saxena/data/albums-resolved.json
 gopal-krishna-saxena/media/album-covers
