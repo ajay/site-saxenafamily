@@ -9,4 +9,3 @@ on:
 jobs:
   make-ci:
     uses: ajay/build-tools/.github/workflows/make-ci.yml@main
-    secrets: inherit

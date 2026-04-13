@@ -14,4 +14,3 @@ permissions:
 jobs:
   deploy:
     uses: ajay/site-common/.github/workflows/deploy.yml@main
-    secrets: inherit
