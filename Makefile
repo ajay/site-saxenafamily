@@ -23,9 +23,7 @@ endif
 
 ################################################################################
 
-ifneq ($(MAKECMDGOALS),repo-init)
-include $(REPO_ROOT)/tools/site-common/makefiles/site.mk
-endif
+-include $(REPO_ROOT)/tools/site-common/makefiles/site.mk
 
 ################################################################################
 
