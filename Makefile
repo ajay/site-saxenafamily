@@ -23,9 +23,8 @@ endif
 
 ################################################################################
 
-clean:
-	@## clean generated files
-	$(Q) $(RM) build
+clean::
+	@## clean project-specific generated files
 	$(Q) $(RM) gopal-krishna-saxena/data/albums-resolved.json
 	$(Q) $(RM) gopal-krishna-saxena/media/album-covers
 
@@ -48,16 +47,11 @@ endif
 build: fetch-albums link-build
 	@## build (fetch albums, link outputs)
 
-serve: build
+dev: build serve
 	@## build & start local dev server
-	$(Q) $(PYTHON) -m http.server 8000
 
-dev: serve
-	@## alias for serve
-
-versions:
+versions::
 	@## print tool versions
-	$(call print_tool_version,$(PYTHON),$(PYTHON))
 	$(call print_tool_version,curl,curl)
 
 ################################################################################
