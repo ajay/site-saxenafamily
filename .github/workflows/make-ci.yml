@@ -1,4 +1,4 @@
-name: CI
+name: make-ci
 
 on:
   push:
@@ -7,6 +7,6 @@ on:
     - cron: '0 0 * * *'
 
 jobs:
-  ci:
+  make-ci:
     uses: ajay/build-tools/.github/workflows/make-ci.yml@main
     secrets: inherit
