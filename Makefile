@@ -6,14 +6,14 @@
 
 REPO_ROOT := $(shell git rev-parse --show-toplevel)
 
-repo-init:
-	@## initialize git submodules
+repo-submodule-update:
+	@## initialize and update git submodules
 	git submodule sync --recursive
 	git submodule update --init --recursive
 
-ifneq ($(MAKECMDGOALS),repo-init)
-ifneq (,$(shell git submodule status --recursive 2>/dev/null | grep '^-'))
-$(error ERROR: git submodules not initialized; run `make repo-init`)
+ifneq ($(MAKECMDGOALS),repo-submodule-update)
+ifneq (,$(shell git submodule status --recursive 2>/dev/null | grep '^[-+]'))
+$(error ERROR: git submodules not initialized or out of date; run `make repo-submodule-update`)
 endif
 endif
 
