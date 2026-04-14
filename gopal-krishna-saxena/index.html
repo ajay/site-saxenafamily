@@ -1,214 +1,768 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <html lang="en">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Gopal Krishna Saxena — In Loving Memory</title>
-<meta content="A memorial tribute to Gopal Krishna Saxena (1934–2026). Photos, prayer songs with transliterations, and family photo albums." name="description"/>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
-<link href="style.css" rel="stylesheet"/>
-</head>
-<body>
-<!-- ============ Hero ============ -->
-<header class="hero">
-<h1>Gopal Krishna Saxena</h1>
-<p class="hero-dates">February 22, 1934 — April 4, 2026</p>
-</header>
-<!-- ============ Navbar ============ -->
-<nav class="navbar">
-<div class="nav-container">
-<a class="nav-link nav-back" href="/">Saxena Family</a>
-<a class="nav-link" href="#posters">Posters</a>
-<a class="nav-link" href="#family-tree">Family Tree</a>
-<a class="nav-link" href="#photo-albums">Photo Albums</a>
-<a class="nav-link" href="#bhajans">Bhajans</a>
-<a class="nav-link" href="#garuda-purana">Garuda Purana</a>
-</div>
-</nav>
-<main>
-<!-- ============ Photos ============ -->
-<section class="section" id="posters">
-<div class="container">
-<h2 class="section-title">Posters</h2>
-<p class="section-subtitle">Click an image to view full size</p>
-<div class="photo-grid" id="poster-grid">
-</div>
-</div>
-</section>
-<!-- ============ Family Tree ============ -->
-<section class="section" id="family-tree">
-<div class="container">
-<h2 class="section-title">Family Tree</h2>
-<div class="family-tree-container" id="family-tree-container">
-</div>
-</div>
-</section>
-<!-- ============ Albums ============ -->
-<section class="section" id="photo-albums">
-<div class="container">
-<h2 class="section-title">Photo Albums</h2>
-<div class="album-grid" id="album-grid"></div>
-</div>
-</section>
-<!-- ============ Bhajans ============ -->
-<section class="section section-alt" id="bhajans">
-<div class="container">
-<h2 class="section-title">Bhajans</h2>
-<p class="section-subtitle">Click each song to view the English transliteration and translation</p>
-<div class="bhajan-list">
-<div class="bhajan-card" data-bhajan="bhajan-bina-chain-na-aaye-ram">
-<div aria-expanded="false" class="bhajan-header" role="button" tabindex="0">
-<div class="bhajan-titles">
-<div class="bhajan-title-hi" lang="hi">भजन बिना चैन न आए राम</div>
-<div class="bhajan-title-en">Bhajan Bina Chain Na Aaye Ram</div>
-</div>
-<span class="expand-icon"><svg viewbox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
-</div>
-<div class="bhajan-body">
-<div class="bhajan-body-inner">
-<div class="bhajan-content"><div class="lazy-load-placeholder">Loading...</div></div>
-</div>
-</div>
-</div>
-<div class="bhajan-card" data-bhajan="chitthi-na-koi-sandesh">
-<div aria-expanded="false" class="bhajan-header" role="button" tabindex="0">
-<div class="bhajan-titles">
-<div class="bhajan-title-hi" lang="hi">चिट्ठी न कोई संदेश</div>
-<div class="bhajan-title-en">Chitthi Na Koi Sandesh</div>
-</div>
-<span class="expand-icon"><svg viewbox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
-</div>
-<div class="bhajan-body">
-<div class="bhajan-body-inner">
-<div class="bhajan-content"><div class="lazy-load-placeholder">Loading...</div></div>
-</div>
-</div>
-</div>
-<div class="bhajan-card" data-bhajan="gayatri-mantra">
-<div aria-expanded="false" class="bhajan-header" role="button" tabindex="0">
-<div class="bhajan-titles">
-<div class="bhajan-title-hi" lang="hi">गायत्री मन्त्र</div>
-<div class="bhajan-title-en">Gayatri Mantra</div>
-</div>
-<span class="expand-icon"><svg viewbox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
-</div>
-<div class="bhajan-body">
-<div class="bhajan-body-inner">
-<div class="bhajan-content"><div class="lazy-load-placeholder">Loading...</div></div>
-</div>
-</div>
-</div>
-<div class="bhajan-card" data-bhajan="maili-chadar-odh-ke-kaise-dwar-tere-aaun">
-<div aria-expanded="false" class="bhajan-header" role="button" tabindex="0">
-<div class="bhajan-titles">
-<div class="bhajan-title-hi" lang="hi">मैली चादर ओढ़ के कैसे द्वार तेरे आऊँ</div>
-<div class="bhajan-title-en">Maili Chadar Odh Ke Kaise Dwar Tere Aaun</div>
-</div>
-<span class="expand-icon"><svg viewbox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
-</div>
-<div class="bhajan-body">
-<div class="bhajan-body-inner">
-<div class="bhajan-content"><div class="lazy-load-placeholder">Loading...</div></div>
-</div>
-</div>
-</div>
-<div class="bhajan-card" data-bhajan="ram-naam-ati-meetha-hai-koi-gaake-dekh-le">
-<div aria-expanded="false" class="bhajan-header" role="button" tabindex="0">
-<div class="bhajan-titles">
-<div class="bhajan-title-hi" lang="hi">राम नाम अति मीठा है कोई गाके देख ले</div>
-<div class="bhajan-title-en">Ram Naam Ati Meetha Hai Koi Gaake Dekh Le</div>
-</div>
-<span class="expand-icon"><svg viewbox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
-</div>
-<div class="bhajan-body">
-<div class="bhajan-body-inner">
-<div class="bhajan-content"><div class="lazy-load-placeholder">Loading...</div></div>
-</div>
-</div>
-</div>
-<div class="bhajan-card" data-bhajan="shanti-path">
-<div aria-expanded="false" class="bhajan-header" role="button" tabindex="0">
-<div class="bhajan-titles">
-<div class="bhajan-title-hi" lang="hi">शान्ति पाठ</div>
-<div class="bhajan-title-en">Shanti Path</div>
-</div>
-<span class="expand-icon"><svg viewbox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
-</div>
-<div class="bhajan-body">
-<div class="bhajan-body-inner">
-<div class="bhajan-content"><div class="lazy-load-placeholder">Loading...</div></div>
-</div>
-</div>
-</div>
-<div class="bhajan-card" data-bhajan="shri-krishna-govind-hare-murari">
-<div aria-expanded="false" class="bhajan-header" role="button" tabindex="0">
-<div class="bhajan-titles">
-<div class="bhajan-title-hi" lang="hi">श्री कृष्ण गोविन्द हरे मुरारी</div>
-<div class="bhajan-title-en">Shri Krishna Govind Hare Murari</div>
-</div>
-<span class="expand-icon"><svg viewbox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
-</div>
-<div class="bhajan-body">
-<div class="bhajan-body-inner">
-<div class="bhajan-content"><div class="lazy-load-placeholder">Loading...</div></div>
-</div>
-</div>
-</div>
-<div class="bhajan-card" data-bhajan="sitaram-sitaram-sitaram-kahiye">
-<div aria-expanded="false" class="bhajan-header" role="button" tabindex="0">
-<div class="bhajan-titles">
-<div class="bhajan-title-hi" lang="hi">सीताराम सीताराम सीताराम कहिए</div>
-<div class="bhajan-title-en">Sitaram Sitaram Sitaram Kahiye</div>
-</div>
-<span class="expand-icon"><svg viewbox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
-</div>
-<div class="bhajan-body">
-<div class="bhajan-body-inner">
-<div class="bhajan-content"><div class="lazy-load-placeholder">Loading...</div></div>
-</div>
-</div>
-</div>
-</div><!-- /bhajan-list -->
-</div>
-</section>
-<!-- ============ Garuda Purana ============ -->
-<section class="section section-alt" id="garuda-purana">
-<div class="container">
-<h2 class="section-title">Garuda Purana</h2>
-<p class="section-subtitle">The 16-chapter text traditionally read during the 13-day funeral ceremony</p>
-<div class="bhajan-list" id="garuda-purana-list">
-<div class="bhajan-card" data-chapter="01"><div aria-expanded="false" class="bhajan-header" role="button" tabindex="0"><div class="bhajan-titles"><div class="bhajan-title-hi" lang="hi">अध्याय १ — यमलोक मार्ग का वर्णन</div><div class="bhajan-title-en">Chapter 1 — The Way of Yama</div></div><span class="expand-icon"><svg viewbox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg></span></div><div class="bhajan-body"><div class="bhajan-body-inner"><div class="bhajan-content"><div class="lazy-load-placeholder">Loading...</div></div></div></div></div>
-<div class="bhajan-card" data-chapter="02"><div aria-expanded="false" class="bhajan-header" role="button" tabindex="0"><div class="bhajan-titles"><div class="bhajan-title-hi" lang="hi">अध्याय २ — यम यातनाओं का वर्णन</div><div class="bhajan-title-en">Chapter 2 — The Torments of Yama</div></div><span class="expand-icon"><svg viewbox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg></span></div><div class="bhajan-body"><div class="bhajan-body-inner"><div class="bhajan-content"><div class="lazy-load-placeholder">Loading...</div></div></div></div></div>
-<div class="bhajan-card" data-chapter="03"><div aria-expanded="false" class="bhajan-header" role="button" tabindex="0"><div class="bhajan-titles"><div class="bhajan-title-hi" lang="hi">अध्याय ३ — धर्मराज नगरी का वर्णन</div><div class="bhajan-title-en">Chapter 3 — The City of the King of Justice</div></div><span class="expand-icon"><svg viewbox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg></span></div><div class="bhajan-body"><div class="bhajan-body-inner"><div class="bhajan-content"><div class="lazy-load-placeholder">Loading...</div></div></div></div></div>
-<div class="bhajan-card" data-chapter="04"><div aria-expanded="false" class="bhajan-header" role="button" tabindex="0"><div class="bhajan-titles"><div class="bhajan-title-hi" lang="hi">अध्याय ४ — पापों के प्रकार का वर्णन</div><div class="bhajan-title-en">Chapter 4 — The Kinds of Sins</div></div><span class="expand-icon"><svg viewbox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg></span></div><div class="bhajan-body"><div class="bhajan-body-inner"><div class="bhajan-content"><div class="lazy-load-placeholder">Loading...</div></div></div></div></div>
-<div class="bhajan-card" data-chapter="05"><div aria-expanded="false" class="bhajan-header" role="button" tabindex="0"><div class="bhajan-titles"><div class="bhajan-title-hi" lang="hi">अध्याय ५ — पाप चिह्नों का वर्णन</div><div class="bhajan-title-en">Chapter 5 — The Signs of Sins</div></div><span class="expand-icon"><svg viewbox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg></span></div><div class="bhajan-body"><div class="bhajan-body-inner"><div class="bhajan-content"><div class="lazy-load-placeholder">Loading...</div></div></div></div></div>
-<div class="bhajan-card" data-chapter="06"><div aria-expanded="false" class="bhajan-header" role="button" tabindex="0"><div class="bhajan-titles"><div class="bhajan-title-hi" lang="hi">अध्याय ६ — दान के प्रकार का वर्णन</div><div class="bhajan-title-en">Chapter 6 — The Kinds of Gifts</div></div><span class="expand-icon"><svg viewbox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg></span></div><div class="bhajan-body"><div class="bhajan-body-inner"><div class="bhajan-content"><div class="lazy-load-placeholder">Loading...</div></div></div></div></div>
-<div class="bhajan-card" data-chapter="07"><div aria-expanded="false" class="bhajan-header" role="button" tabindex="0"><div class="bhajan-titles"><div class="bhajan-title-hi" lang="hi">अध्याय ७ — अन्त्येष्टि संस्कार</div><div class="bhajan-title-en">Chapter 7 — Rites for the Dying</div></div><span class="expand-icon"><svg viewbox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg></span></div><div class="bhajan-body"><div class="bhajan-body-inner"><div class="bhajan-content"><div class="lazy-load-placeholder">Loading...</div></div></div></div></div>
-<div class="bhajan-card" data-chapter="08"><div aria-expanded="false" class="bhajan-header" role="button" tabindex="0"><div class="bhajan-titles"><div class="bhajan-title-hi" lang="hi">अध्याय ८ — मरणकालीन दान</div><div class="bhajan-title-en">Chapter 8 — Gifts for the Dying</div></div><span class="expand-icon"><svg viewbox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg></span></div><div class="bhajan-body"><div class="bhajan-body-inner"><div class="bhajan-content"><div class="lazy-load-placeholder">Loading...</div></div></div></div></div>
-<div class="bhajan-card" data-chapter="09"><div aria-expanded="false" class="bhajan-header" role="button" tabindex="0"><div class="bhajan-titles"><div class="bhajan-title-hi" lang="hi">अध्याय ९ — मृतक संस्कार का वर्णन</div><div class="bhajan-title-en">Chapter 9 — Ceremonies for the Dead</div></div><span class="expand-icon"><svg viewbox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg></span></div><div class="bhajan-body"><div class="bhajan-body-inner"><div class="bhajan-content"><div class="lazy-load-placeholder">Loading...</div></div></div></div></div>
-<div class="bhajan-card" data-chapter="10"><div aria-expanded="false" class="bhajan-header" role="button" tabindex="0"><div class="bhajan-titles"><div class="bhajan-title-hi" lang="hi">अध्याय १० — दशगात्र विधि का वर्णन</div><div class="bhajan-title-en">Chapter 10 — The Ten-Days' Ceremonies</div></div><span class="expand-icon"><svg viewbox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg></span></div><div class="bhajan-body"><div class="bhajan-body-inner"><div class="bhajan-content"><div class="lazy-load-placeholder">Loading...</div></div></div></div></div>
-<div class="bhajan-card" data-chapter="11"><div aria-expanded="false" class="bhajan-header" role="button" tabindex="0"><div class="bhajan-titles"><div class="bhajan-title-hi" lang="hi">अध्याय ११ — एकादशाह कर्म का वर्णन</div><div class="bhajan-title-en">Chapter 11 — The Eleventh-Day Rites</div></div><span class="expand-icon"><svg viewbox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg></span></div><div class="bhajan-body"><div class="bhajan-body-inner"><div class="bhajan-content"><div class="lazy-load-placeholder">Loading...</div></div></div></div></div>
-<div class="bhajan-card" data-chapter="12"><div aria-expanded="false" class="bhajan-header" role="button" tabindex="0"><div class="bhajan-titles"><div class="bhajan-title-hi" lang="hi">अध्याय १२ — सपिण्डीकरण का वर्णन</div><div class="bhajan-title-en">Chapter 12 — The Sapinda Ceremony</div></div><span class="expand-icon"><svg viewbox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg></span></div><div class="bhajan-body"><div class="bhajan-body-inner"><div class="bhajan-content"><div class="lazy-load-placeholder">Loading...</div></div></div></div></div>
-<div class="bhajan-card" data-chapter="13"><div aria-expanded="false" class="bhajan-header" role="button" tabindex="0"><div class="bhajan-titles"><div class="bhajan-title-hi" lang="hi">अध्याय १३ — पितृ श्राद्ध का वर्णन</div><div class="bhajan-title-en">Chapter 13 — Ceremony for All Ancestors</div></div><span class="expand-icon"><svg viewbox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg></span></div><div class="bhajan-body"><div class="bhajan-body-inner"><div class="bhajan-content"><div class="lazy-load-placeholder">Loading...</div></div></div></div></div>
-<div class="bhajan-card" data-chapter="14"><div aria-expanded="false" class="bhajan-header" role="button" tabindex="0"><div class="bhajan-titles"><div class="bhajan-title-hi" lang="hi">अध्याय १४ — यम गीता</div><div class="bhajan-title-en">Chapter 14 — The Yama Gita</div></div><span class="expand-icon"><svg viewbox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg></span></div><div class="bhajan-body"><div class="bhajan-body-inner"><div class="bhajan-content"><div class="lazy-load-placeholder">Loading...</div></div></div></div></div>
-<div class="bhajan-card" data-chapter="15"><div aria-expanded="false" class="bhajan-header" role="button" tabindex="0"><div class="bhajan-titles"><div class="bhajan-title-hi" lang="hi">अध्याय १५ — मोक्ष का वर्णन</div><div class="bhajan-title-en">Chapter 15 — Liberation</div></div><span class="expand-icon"><svg viewbox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg></span></div><div class="bhajan-body"><div class="bhajan-body-inner"><div class="bhajan-content"><div class="lazy-load-placeholder">Loading...</div></div></div></div></div>
-<div class="bhajan-card" data-chapter="16"><div aria-expanded="false" class="bhajan-header" role="button" tabindex="0"><div class="bhajan-titles"><div class="bhajan-title-hi" lang="hi">अध्याय १६ — विश्वरूप का वर्णन</div><div class="bhajan-title-en">Chapter 16 — The Universal Form</div></div><span class="expand-icon"><svg viewbox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg></span></div><div class="bhajan-body"><div class="bhajan-body-inner"><div class="bhajan-content"><div class="lazy-load-placeholder">Loading...</div></div></div></div></div>
-</div><!-- /garuda-purana-list -->
-</div>
-</section>
-</main>
-<!-- ============ Footer ============ -->
-<footer class="footer">
-<p>In loving memory of Gopal Krishna Saxena</p>
-</footer>
-<!-- ============ Lightbox ============ -->
-<div class="lightbox" id="lightbox">
-<button aria-label="Close" class="lightbox-close">×</button>
-<img alt="" id="lightbox-img" src="data:,"/>
-</div>
-<script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Gopal Krishna Saxena — In Loving Memory</title>
+    <meta
+      content="A memorial tribute to Gopal Krishna Saxena (1934–2026). Photos, prayer songs with transliterations, and family photo albums."
+      name="description"
+    />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- ============ Hero ============ -->
+    <header class="hero">
+      <h1>Gopal Krishna Saxena</h1>
+      <p class="hero-dates">February 22, 1934 — April 4, 2026</p>
+    </header>
+    <!-- ============ Navbar ============ -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a class="nav-link nav-back" href="/">Saxena Family</a>
+        <a class="nav-link" href="#posters">Posters</a>
+        <a class="nav-link" href="#family-tree">Family Tree</a>
+        <a class="nav-link" href="#photo-albums">Photo Albums</a>
+        <a class="nav-link" href="#bhajans">Bhajans</a>
+        <a class="nav-link" href="#garuda-purana">Garuda Purana</a>
+      </div>
+    </nav>
+    <main>
+      <!-- ============ Photos ============ -->
+      <section class="section" id="posters">
+        <div class="container">
+          <h2 class="section-title">Posters</h2>
+          <p class="section-subtitle">Click an image to view full size</p>
+          <div class="photo-grid" id="poster-grid"></div>
+        </div>
+      </section>
+      <!-- ============ Family Tree ============ -->
+      <section class="section" id="family-tree">
+        <div class="container">
+          <h2 class="section-title">Family Tree</h2>
+          <div class="family-tree-container" id="family-tree-container"></div>
+        </div>
+      </section>
+      <!-- ============ Albums ============ -->
+      <section class="section" id="photo-albums">
+        <div class="container">
+          <h2 class="section-title">Photo Albums</h2>
+          <div class="album-grid" id="album-grid"></div>
+        </div>
+      </section>
+      <!-- ============ Bhajans ============ -->
+      <section class="section section-alt" id="bhajans">
+        <div class="container">
+          <h2 class="section-title">Bhajans</h2>
+          <p class="section-subtitle">
+            Click each song to view the English transliteration and translation
+          </p>
+          <div class="bhajan-list">
+            <div
+              class="bhajan-card"
+              data-bhajan="bhajan-bina-chain-na-aaye-ram"
+            >
+              <div
+                aria-expanded="false"
+                class="bhajan-header"
+                role="button"
+                tabindex="0"
+              >
+                <div class="bhajan-titles">
+                  <div class="bhajan-title-hi" lang="hi">
+                    भजन बिना चैन न आए राम
+                  </div>
+                  <div class="bhajan-title-en">
+                    Bhajan Bina Chain Na Aaye Ram
+                  </div>
+                </div>
+                <span class="expand-icon"
+                  ><svg viewbox="0 0 24 24">
+                    <polyline points="6 9 12 15 18 9"></polyline></svg
+                ></span>
+              </div>
+              <div class="bhajan-body">
+                <div class="bhajan-body-inner">
+                  <div class="bhajan-content">
+                    <div class="lazy-load-placeholder">Loading...</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bhajan-card" data-bhajan="chitthi-na-koi-sandesh">
+              <div
+                aria-expanded="false"
+                class="bhajan-header"
+                role="button"
+                tabindex="0"
+              >
+                <div class="bhajan-titles">
+                  <div class="bhajan-title-hi" lang="hi">
+                    चिट्ठी न कोई संदेश
+                  </div>
+                  <div class="bhajan-title-en">Chitthi Na Koi Sandesh</div>
+                </div>
+                <span class="expand-icon"
+                  ><svg viewbox="0 0 24 24">
+                    <polyline points="6 9 12 15 18 9"></polyline></svg
+                ></span>
+              </div>
+              <div class="bhajan-body">
+                <div class="bhajan-body-inner">
+                  <div class="bhajan-content">
+                    <div class="lazy-load-placeholder">Loading...</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bhajan-card" data-bhajan="gayatri-mantra">
+              <div
+                aria-expanded="false"
+                class="bhajan-header"
+                role="button"
+                tabindex="0"
+              >
+                <div class="bhajan-titles">
+                  <div class="bhajan-title-hi" lang="hi">गायत्री मन्त्र</div>
+                  <div class="bhajan-title-en">Gayatri Mantra</div>
+                </div>
+                <span class="expand-icon"
+                  ><svg viewbox="0 0 24 24">
+                    <polyline points="6 9 12 15 18 9"></polyline></svg
+                ></span>
+              </div>
+              <div class="bhajan-body">
+                <div class="bhajan-body-inner">
+                  <div class="bhajan-content">
+                    <div class="lazy-load-placeholder">Loading...</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bhajan-card"
+              data-bhajan="maili-chadar-odh-ke-kaise-dwar-tere-aaun"
+            >
+              <div
+                aria-expanded="false"
+                class="bhajan-header"
+                role="button"
+                tabindex="0"
+              >
+                <div class="bhajan-titles">
+                  <div class="bhajan-title-hi" lang="hi">
+                    मैली चादर ओढ़ के कैसे द्वार तेरे आऊँ
+                  </div>
+                  <div class="bhajan-title-en">
+                    Maili Chadar Odh Ke Kaise Dwar Tere Aaun
+                  </div>
+                </div>
+                <span class="expand-icon"
+                  ><svg viewbox="0 0 24 24">
+                    <polyline points="6 9 12 15 18 9"></polyline></svg
+                ></span>
+              </div>
+              <div class="bhajan-body">
+                <div class="bhajan-body-inner">
+                  <div class="bhajan-content">
+                    <div class="lazy-load-placeholder">Loading...</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bhajan-card"
+              data-bhajan="ram-naam-ati-meetha-hai-koi-gaake-dekh-le"
+            >
+              <div
+                aria-expanded="false"
+                class="bhajan-header"
+                role="button"
+                tabindex="0"
+              >
+                <div class="bhajan-titles">
+                  <div class="bhajan-title-hi" lang="hi">
+                    राम नाम अति मीठा है कोई गाके देख ले
+                  </div>
+                  <div class="bhajan-title-en">
+                    Ram Naam Ati Meetha Hai Koi Gaake Dekh Le
+                  </div>
+                </div>
+                <span class="expand-icon"
+                  ><svg viewbox="0 0 24 24">
+                    <polyline points="6 9 12 15 18 9"></polyline></svg
+                ></span>
+              </div>
+              <div class="bhajan-body">
+                <div class="bhajan-body-inner">
+                  <div class="bhajan-content">
+                    <div class="lazy-load-placeholder">Loading...</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bhajan-card" data-bhajan="shanti-path">
+              <div
+                aria-expanded="false"
+                class="bhajan-header"
+                role="button"
+                tabindex="0"
+              >
+                <div class="bhajan-titles">
+                  <div class="bhajan-title-hi" lang="hi">शान्ति पाठ</div>
+                  <div class="bhajan-title-en">Shanti Path</div>
+                </div>
+                <span class="expand-icon"
+                  ><svg viewbox="0 0 24 24">
+                    <polyline points="6 9 12 15 18 9"></polyline></svg
+                ></span>
+              </div>
+              <div class="bhajan-body">
+                <div class="bhajan-body-inner">
+                  <div class="bhajan-content">
+                    <div class="lazy-load-placeholder">Loading...</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bhajan-card"
+              data-bhajan="shri-krishna-govind-hare-murari"
+            >
+              <div
+                aria-expanded="false"
+                class="bhajan-header"
+                role="button"
+                tabindex="0"
+              >
+                <div class="bhajan-titles">
+                  <div class="bhajan-title-hi" lang="hi">
+                    श्री कृष्ण गोविन्द हरे मुरारी
+                  </div>
+                  <div class="bhajan-title-en">
+                    Shri Krishna Govind Hare Murari
+                  </div>
+                </div>
+                <span class="expand-icon"
+                  ><svg viewbox="0 0 24 24">
+                    <polyline points="6 9 12 15 18 9"></polyline></svg
+                ></span>
+              </div>
+              <div class="bhajan-body">
+                <div class="bhajan-body-inner">
+                  <div class="bhajan-content">
+                    <div class="lazy-load-placeholder">Loading...</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bhajan-card"
+              data-bhajan="sitaram-sitaram-sitaram-kahiye"
+            >
+              <div
+                aria-expanded="false"
+                class="bhajan-header"
+                role="button"
+                tabindex="0"
+              >
+                <div class="bhajan-titles">
+                  <div class="bhajan-title-hi" lang="hi">
+                    सीताराम सीताराम सीताराम कहिए
+                  </div>
+                  <div class="bhajan-title-en">
+                    Sitaram Sitaram Sitaram Kahiye
+                  </div>
+                </div>
+                <span class="expand-icon"
+                  ><svg viewbox="0 0 24 24">
+                    <polyline points="6 9 12 15 18 9"></polyline></svg
+                ></span>
+              </div>
+              <div class="bhajan-body">
+                <div class="bhajan-body-inner">
+                  <div class="bhajan-content">
+                    <div class="lazy-load-placeholder">Loading...</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /bhajan-list -->
+        </div>
+      </section>
+      <!-- ============ Garuda Purana ============ -->
+      <section class="section section-alt" id="garuda-purana">
+        <div class="container">
+          <h2 class="section-title">Garuda Purana</h2>
+          <p class="section-subtitle">
+            The 16-chapter text traditionally read during the 13-day funeral
+            ceremony
+          </p>
+          <div class="bhajan-list" id="garuda-purana-list">
+            <div class="bhajan-card" data-chapter="01">
+              <div
+                aria-expanded="false"
+                class="bhajan-header"
+                role="button"
+                tabindex="0"
+              >
+                <div class="bhajan-titles">
+                  <div class="bhajan-title-hi" lang="hi">
+                    अध्याय १ — यमलोक मार्ग का वर्णन
+                  </div>
+                  <div class="bhajan-title-en">Chapter 1 — The Way of Yama</div>
+                </div>
+                <span class="expand-icon"
+                  ><svg viewbox="0 0 24 24">
+                    <polyline points="6 9 12 15 18 9"></polyline></svg
+                ></span>
+              </div>
+              <div class="bhajan-body">
+                <div class="bhajan-body-inner">
+                  <div class="bhajan-content">
+                    <div class="lazy-load-placeholder">Loading...</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bhajan-card" data-chapter="02">
+              <div
+                aria-expanded="false"
+                class="bhajan-header"
+                role="button"
+                tabindex="0"
+              >
+                <div class="bhajan-titles">
+                  <div class="bhajan-title-hi" lang="hi">
+                    अध्याय २ — यम यातनाओं का वर्णन
+                  </div>
+                  <div class="bhajan-title-en">
+                    Chapter 2 — The Torments of Yama
+                  </div>
+                </div>
+                <span class="expand-icon"
+                  ><svg viewbox="0 0 24 24">
+                    <polyline points="6 9 12 15 18 9"></polyline></svg
+                ></span>
+              </div>
+              <div class="bhajan-body">
+                <div class="bhajan-body-inner">
+                  <div class="bhajan-content">
+                    <div class="lazy-load-placeholder">Loading...</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bhajan-card" data-chapter="03">
+              <div
+                aria-expanded="false"
+                class="bhajan-header"
+                role="button"
+                tabindex="0"
+              >
+                <div class="bhajan-titles">
+                  <div class="bhajan-title-hi" lang="hi">
+                    अध्याय ३ — धर्मराज नगरी का वर्णन
+                  </div>
+                  <div class="bhajan-title-en">
+                    Chapter 3 — The City of the King of Justice
+                  </div>
+                </div>
+                <span class="expand-icon"
+                  ><svg viewbox="0 0 24 24">
+                    <polyline points="6 9 12 15 18 9"></polyline></svg
+                ></span>
+              </div>
+              <div class="bhajan-body">
+                <div class="bhajan-body-inner">
+                  <div class="bhajan-content">
+                    <div class="lazy-load-placeholder">Loading...</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bhajan-card" data-chapter="04">
+              <div
+                aria-expanded="false"
+                class="bhajan-header"
+                role="button"
+                tabindex="0"
+              >
+                <div class="bhajan-titles">
+                  <div class="bhajan-title-hi" lang="hi">
+                    अध्याय ४ — पापों के प्रकार का वर्णन
+                  </div>
+                  <div class="bhajan-title-en">
+                    Chapter 4 — The Kinds of Sins
+                  </div>
+                </div>
+                <span class="expand-icon"
+                  ><svg viewbox="0 0 24 24">
+                    <polyline points="6 9 12 15 18 9"></polyline></svg
+                ></span>
+              </div>
+              <div class="bhajan-body">
+                <div class="bhajan-body-inner">
+                  <div class="bhajan-content">
+                    <div class="lazy-load-placeholder">Loading...</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bhajan-card" data-chapter="05">
+              <div
+                aria-expanded="false"
+                class="bhajan-header"
+                role="button"
+                tabindex="0"
+              >
+                <div class="bhajan-titles">
+                  <div class="bhajan-title-hi" lang="hi">
+                    अध्याय ५ — पाप चिह्नों का वर्णन
+                  </div>
+                  <div class="bhajan-title-en">
+                    Chapter 5 — The Signs of Sins
+                  </div>
+                </div>
+                <span class="expand-icon"
+                  ><svg viewbox="0 0 24 24">
+                    <polyline points="6 9 12 15 18 9"></polyline></svg
+                ></span>
+              </div>
+              <div class="bhajan-body">
+                <div class="bhajan-body-inner">
+                  <div class="bhajan-content">
+                    <div class="lazy-load-placeholder">Loading...</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bhajan-card" data-chapter="06">
+              <div
+                aria-expanded="false"
+                class="bhajan-header"
+                role="button"
+                tabindex="0"
+              >
+                <div class="bhajan-titles">
+                  <div class="bhajan-title-hi" lang="hi">
+                    अध्याय ६ — दान के प्रकार का वर्णन
+                  </div>
+                  <div class="bhajan-title-en">
+                    Chapter 6 — The Kinds of Gifts
+                  </div>
+                </div>
+                <span class="expand-icon"
+                  ><svg viewbox="0 0 24 24">
+                    <polyline points="6 9 12 15 18 9"></polyline></svg
+                ></span>
+              </div>
+              <div class="bhajan-body">
+                <div class="bhajan-body-inner">
+                  <div class="bhajan-content">
+                    <div class="lazy-load-placeholder">Loading...</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bhajan-card" data-chapter="07">
+              <div
+                aria-expanded="false"
+                class="bhajan-header"
+                role="button"
+                tabindex="0"
+              >
+                <div class="bhajan-titles">
+                  <div class="bhajan-title-hi" lang="hi">
+                    अध्याय ७ — अन्त्येष्टि संस्कार
+                  </div>
+                  <div class="bhajan-title-en">
+                    Chapter 7 — Rites for the Dying
+                  </div>
+                </div>
+                <span class="expand-icon"
+                  ><svg viewbox="0 0 24 24">
+                    <polyline points="6 9 12 15 18 9"></polyline></svg
+                ></span>
+              </div>
+              <div class="bhajan-body">
+                <div class="bhajan-body-inner">
+                  <div class="bhajan-content">
+                    <div class="lazy-load-placeholder">Loading...</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bhajan-card" data-chapter="08">
+              <div
+                aria-expanded="false"
+                class="bhajan-header"
+                role="button"
+                tabindex="0"
+              >
+                <div class="bhajan-titles">
+                  <div class="bhajan-title-hi" lang="hi">
+                    अध्याय ८ — मरणकालीन दान
+                  </div>
+                  <div class="bhajan-title-en">
+                    Chapter 8 — Gifts for the Dying
+                  </div>
+                </div>
+                <span class="expand-icon"
+                  ><svg viewbox="0 0 24 24">
+                    <polyline points="6 9 12 15 18 9"></polyline></svg
+                ></span>
+              </div>
+              <div class="bhajan-body">
+                <div class="bhajan-body-inner">
+                  <div class="bhajan-content">
+                    <div class="lazy-load-placeholder">Loading...</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bhajan-card" data-chapter="09">
+              <div
+                aria-expanded="false"
+                class="bhajan-header"
+                role="button"
+                tabindex="0"
+              >
+                <div class="bhajan-titles">
+                  <div class="bhajan-title-hi" lang="hi">
+                    अध्याय ९ — मृतक संस्कार का वर्णन
+                  </div>
+                  <div class="bhajan-title-en">
+                    Chapter 9 — Ceremonies for the Dead
+                  </div>
+                </div>
+                <span class="expand-icon"
+                  ><svg viewbox="0 0 24 24">
+                    <polyline points="6 9 12 15 18 9"></polyline></svg
+                ></span>
+              </div>
+              <div class="bhajan-body">
+                <div class="bhajan-body-inner">
+                  <div class="bhajan-content">
+                    <div class="lazy-load-placeholder">Loading...</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bhajan-card" data-chapter="10">
+              <div
+                aria-expanded="false"
+                class="bhajan-header"
+                role="button"
+                tabindex="0"
+              >
+                <div class="bhajan-titles">
+                  <div class="bhajan-title-hi" lang="hi">
+                    अध्याय १० — दशगात्र विधि का वर्णन
+                  </div>
+                  <div class="bhajan-title-en">
+                    Chapter 10 — The Ten-Days' Ceremonies
+                  </div>
+                </div>
+                <span class="expand-icon"
+                  ><svg viewbox="0 0 24 24">
+                    <polyline points="6 9 12 15 18 9"></polyline></svg
+                ></span>
+              </div>
+              <div class="bhajan-body">
+                <div class="bhajan-body-inner">
+                  <div class="bhajan-content">
+                    <div class="lazy-load-placeholder">Loading...</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bhajan-card" data-chapter="11">
+              <div
+                aria-expanded="false"
+                class="bhajan-header"
+                role="button"
+                tabindex="0"
+              >
+                <div class="bhajan-titles">
+                  <div class="bhajan-title-hi" lang="hi">
+                    अध्याय ११ — एकादशाह कर्म का वर्णन
+                  </div>
+                  <div class="bhajan-title-en">
+                    Chapter 11 — The Eleventh-Day Rites
+                  </div>
+                </div>
+                <span class="expand-icon"
+                  ><svg viewbox="0 0 24 24">
+                    <polyline points="6 9 12 15 18 9"></polyline></svg
+                ></span>
+              </div>
+              <div class="bhajan-body">
+                <div class="bhajan-body-inner">
+                  <div class="bhajan-content">
+                    <div class="lazy-load-placeholder">Loading...</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bhajan-card" data-chapter="12">
+              <div
+                aria-expanded="false"
+                class="bhajan-header"
+                role="button"
+                tabindex="0"
+              >
+                <div class="bhajan-titles">
+                  <div class="bhajan-title-hi" lang="hi">
+                    अध्याय १२ — सपिण्डीकरण का वर्णन
+                  </div>
+                  <div class="bhajan-title-en">
+                    Chapter 12 — The Sapinda Ceremony
+                  </div>
+                </div>
+                <span class="expand-icon"
+                  ><svg viewbox="0 0 24 24">
+                    <polyline points="6 9 12 15 18 9"></polyline></svg
+                ></span>
+              </div>
+              <div class="bhajan-body">
+                <div class="bhajan-body-inner">
+                  <div class="bhajan-content">
+                    <div class="lazy-load-placeholder">Loading...</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bhajan-card" data-chapter="13">
+              <div
+                aria-expanded="false"
+                class="bhajan-header"
+                role="button"
+                tabindex="0"
+              >
+                <div class="bhajan-titles">
+                  <div class="bhajan-title-hi" lang="hi">
+                    अध्याय १३ — पितृ श्राद्ध का वर्णन
+                  </div>
+                  <div class="bhajan-title-en">
+                    Chapter 13 — Ceremony for All Ancestors
+                  </div>
+                </div>
+                <span class="expand-icon"
+                  ><svg viewbox="0 0 24 24">
+                    <polyline points="6 9 12 15 18 9"></polyline></svg
+                ></span>
+              </div>
+              <div class="bhajan-body">
+                <div class="bhajan-body-inner">
+                  <div class="bhajan-content">
+                    <div class="lazy-load-placeholder">Loading...</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bhajan-card" data-chapter="14">
+              <div
+                aria-expanded="false"
+                class="bhajan-header"
+                role="button"
+                tabindex="0"
+              >
+                <div class="bhajan-titles">
+                  <div class="bhajan-title-hi" lang="hi">
+                    अध्याय १४ — यम गीता
+                  </div>
+                  <div class="bhajan-title-en">Chapter 14 — The Yama Gita</div>
+                </div>
+                <span class="expand-icon"
+                  ><svg viewbox="0 0 24 24">
+                    <polyline points="6 9 12 15 18 9"></polyline></svg
+                ></span>
+              </div>
+              <div class="bhajan-body">
+                <div class="bhajan-body-inner">
+                  <div class="bhajan-content">
+                    <div class="lazy-load-placeholder">Loading...</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bhajan-card" data-chapter="15">
+              <div
+                aria-expanded="false"
+                class="bhajan-header"
+                role="button"
+                tabindex="0"
+              >
+                <div class="bhajan-titles">
+                  <div class="bhajan-title-hi" lang="hi">
+                    अध्याय १५ — मोक्ष का वर्णन
+                  </div>
+                  <div class="bhajan-title-en">Chapter 15 — Liberation</div>
+                </div>
+                <span class="expand-icon"
+                  ><svg viewbox="0 0 24 24">
+                    <polyline points="6 9 12 15 18 9"></polyline></svg
+                ></span>
+              </div>
+              <div class="bhajan-body">
+                <div class="bhajan-body-inner">
+                  <div class="bhajan-content">
+                    <div class="lazy-load-placeholder">Loading...</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bhajan-card" data-chapter="16">
+              <div
+                aria-expanded="false"
+                class="bhajan-header"
+                role="button"
+                tabindex="0"
+              >
+                <div class="bhajan-titles">
+                  <div class="bhajan-title-hi" lang="hi">
+                    अध्याय १६ — विश्वरूप का वर्णन
+                  </div>
+                  <div class="bhajan-title-en">
+                    Chapter 16 — The Universal Form
+                  </div>
+                </div>
+                <span class="expand-icon"
+                  ><svg viewbox="0 0 24 24">
+                    <polyline points="6 9 12 15 18 9"></polyline></svg
+                ></span>
+              </div>
+              <div class="bhajan-body">
+                <div class="bhajan-body-inner">
+                  <div class="bhajan-content">
+                    <div class="lazy-load-placeholder">Loading...</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /garuda-purana-list -->
+        </div>
+      </section>
+    </main>
+    <!-- ============ Footer ============ -->
+    <footer class="footer">
+      <p>In loving memory of Gopal Krishna Saxena</p>
+    </footer>
+    <!-- ============ Lightbox ============ -->
+    <div class="lightbox" id="lightbox">
+      <button aria-label="Close" class="lightbox-close">×</button>
+      <img alt="" id="lightbox-img" src="data:," />
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
