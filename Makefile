@@ -50,8 +50,6 @@ build: fetch-albums link-build
 dev: build serve
 	@## build & start local dev server
 
-versions::
-	@## print tool versions
-	$(call print_tool_version,curl,curl)
+DEPS += curl
 
 ################################################################################
