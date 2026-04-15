@@ -185,11 +185,17 @@
           class="qr-thumb"
           src="media/qr-codes/qr-code_saxenafamily.com-gopal-krishna-saxena.png"
           alt="QR code for Gopal Krishna Saxena memorial"
-          onclick="event.preventDefault(); openLightbox(this.src)"
+          onclick="
+            event.preventDefault();
+            openLightbox(this.src);
+          "
         />
       </a>
     </div>
-    <div class="qr-site" onclick="openLightbox('media/qr-codes/qr-code_saxenafamily.com.png')">
+    <div
+      class="qr-site"
+      onclick="openLightbox('media/qr-codes/qr-code_saxenafamily.com.png')"
+    >
       <img
         src="media/qr-codes/qr-code_saxenafamily.com.png"
         alt="QR code for saxenafamily.com"
