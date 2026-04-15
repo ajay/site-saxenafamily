@@ -19,14 +19,9 @@ endif
 
 ################################################################################
 
+DEPS += curl $(PYTHON)
+
 -include $(REPO_ROOT)/site-common/makefiles/site.mk
-
-################################################################################
-
-clean::
-	@## clean project-specific generated files
-	$(Q) $(RM) gopal-krishna-saxena/data/albums-resolved.json
-	$(Q) $(RM) gopal-krishna-saxena/media/album-covers
 
 ################################################################################
 
@@ -34,22 +29,10 @@ fetch-albums:
 	@## fetch album titles and covers from Google Photos
 	$(Q) $(PYTHON) scripts/fetch-album-titles.py
 
-link-build:
-	@## copy/symlink build outputs into source tree
-ifdef CI
-	$(Q) cp -r build/gopal-krishna-saxena/data/* gopal-krishna-saxena/data/
-	$(Q) cp -r build/gopal-krishna-saxena/media/* gopal-krishna-saxena/media/
-else
-	$(Q) ln -sf $(REPO_ROOT)/build/gopal-krishna-saxena/data/albums-resolved.json gopal-krishna-saxena/data/albums-resolved.json
-	$(Q) ln -sf $(REPO_ROOT)/build/gopal-krishna-saxena/media/album-covers gopal-krishna-saxena/media/album-covers
-endif
-
-build: fetch-albums link-build
-	@## build (fetch albums, link outputs)
+build: fetch-albums
+	@## build (fetch albums)
 
 dev: build serve
 	@## build & start local dev server
-
-DEPS += curl
 
 ################################################################################

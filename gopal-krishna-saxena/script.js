@@ -54,7 +54,9 @@ document.addEventListener("DOMContentLoaded", function () {
         if (placeholder) {
           placeholder.textContent = "Loading...";
           fetch(
-            "data/garuda-purana/chapter-" + chapter.padStart(2, "0") + ".json",
+            "../data/garuda-purana/chapter-" +
+              chapter.padStart(2, "0") +
+              ".json",
           )
             .then(function (r) {
               return r.json();
@@ -76,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
         var placeholder = card.querySelector(".lazy-load-placeholder");
         if (placeholder) {
           placeholder.textContent = "Loading...";
-          fetch("data/bhajans/" + bhajan + ".json")
+          fetch("../data/bhajans/" + bhajan + ".json")
             .then(function (r) {
               return r.json();
             })
@@ -170,7 +172,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // -- Load posters from JSON --
   var posterGrid = document.getElementById("poster-grid");
   if (posterGrid) {
-    fetch("data/posters.json")
+    fetch("../data/gopal-krishna-saxena/posters.json")
       .then(function (r) {
         return r.json();
       })
@@ -192,7 +194,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // -- Load family tree from JSON --
   var treeContainer = document.getElementById("family-tree-container");
   if (treeContainer) {
-    fetch("data/family-tree.json")
+    fetch("../data/gopal-krishna-saxena/family-tree.json")
       .then(function (r) {
         return r.json();
       })
@@ -210,7 +212,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // -- Load photo albums from JSON --
   var albumGrid = document.getElementById("album-grid");
   if (albumGrid) {
-    fetch("data/albums-resolved.json")
+    fetch("../build/data/gopal-krishna-saxena/albums-resolved.json")
       .then(function (r) {
         return r.json();
       })

@@ -8,9 +8,9 @@ import subprocess
 import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-ALBUMS_INPUT = "gopal-krishna-saxena/data/albums.json"
-ALBUMS_OUTPUT = "build/gopal-krishna-saxena/data/albums-resolved.json"
-COVERS_DIR = "build/gopal-krishna-saxena/media/album-covers"
+ALBUMS_INPUT = "data/gopal-krishna-saxena/albums.json"
+ALBUMS_OUTPUT = "build/data/gopal-krishna-saxena/albums-resolved.json"
+COVERS_DIR = "build/assets/images/gopal-krishna-saxena/album-covers"
 CURL_TIMEOUT = 30
 
 
@@ -77,7 +77,7 @@ def process_album(url):
 
     album = {"title": title, "url": url}
     if cover_path:
-        album["cover"] = cover_path.replace("build/gopal-krishna-saxena/", "")
+        album["cover"] = "../" + cover_path
     return album
 
 
