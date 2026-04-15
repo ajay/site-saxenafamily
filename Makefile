@@ -35,10 +35,6 @@ $(ALBUMS_OUTPUT): $(ALBUMS_INPUT) scripts/fetch-album-metadata.py
 fetch-albums: $(ALBUMS_OUTPUT)
 	@## fetch album metadata from Google Photos
 
-build: fetch-albums
-	@## build
-
-dev: build serve
-	@## build & start local dev server
+build:: fetch-albums
 
 ################################################################################
