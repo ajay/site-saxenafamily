@@ -6,17 +6,19 @@ import os
 import re
 import subprocess
 import sys
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 ALBUMS_INPUT = "gopal-krishna-saxena/data/albums.json"
 ALBUMS_OUTPUT = "build/gopal-krishna-saxena/data/albums-resolved.json"
 COVERS_DIR = "build/gopal-krishna-saxena/media/album-covers"
+CURL_TIMEOUT = 30
 
 
 def fetch_album_page(url):
     try:
         result = subprocess.run(
             ["curl", "-sL", url],
-            capture_output=True, text=True, timeout=15
+            capture_output=True, text=True, timeout=CURL_TIMEOUT
         )
         return result.stdout
     except Exception as e:
@@ -44,7 +46,7 @@ def download_cover(cover_url, slug):
     try:
         subprocess.run(
             ["curl", "-sL", "-o", filepath, cover_url],
-            timeout=15, check=True
+            timeout=CURL_TIMEOUT, check=True
         )
         return filepath
     except Exception as e:
@@ -56,35 +58,42 @@ def slugify(title):
     return re.sub(r'[^a-z0-9]+', '-', title.lower()).strip('-')
 
 
+def process_album(url):
+    """Fetch metadata and cover for a single album. Returns album dict."""
+    html = fetch_album_page(url)
+
+    title = extract_title(html)
+    if title:
+        print(f"  {url} -> {title}")
+    else:
+        print(f"  {url} -> (could not fetch, using URL as fallback)")
+        title = url
+
+    slug = slugify(title)
+    cover_url = extract_cover_url(html)
+    cover_path = None
+    if cover_url:
+        cover_path = download_cover(cover_url, slug)
+
+    album = {"title": title, "url": url}
+    if cover_path:
+        album["cover"] = cover_path.replace("build/gopal-krishna-saxena/", "")
+    return album
+
+
 def main():
     with open(ALBUMS_INPUT) as f:
         urls = json.load(f)
 
-    albums = []
-    for url in urls:
-        print(f"Fetching {url}...")
-        html = fetch_album_page(url)
+    print(f"Fetching {len(urls)} albums in parallel:\n  " + "\n  ".join(urls) + "\n")
 
-        title = extract_title(html)
-        if title:
-            print(f"  title: {title}")
-        else:
-            print(f"  title: (could not fetch, using URL as fallback)")
-            title = url
-
-        slug = slugify(title)
-        cover_url = extract_cover_url(html)
-        cover_path = None
-        if cover_url:
-            cover_path = download_cover(cover_url, slug)
-            if cover_path:
-                print(f"  cover: {cover_path}")
-
-        album = {"title": title, "url": url}
-        if cover_path:
-            # Store path relative to the page's index.html
-            album["cover"] = cover_path.replace("build/gopal-krishna-saxena/", "")
-        albums.append(album)
+    # Preserve original order by mapping futures to indices
+    albums = [None] * len(urls)
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        future_to_idx = {pool.submit(process_album, url): i for i, url in enumerate(urls)}
+        for future in as_completed(future_to_idx):
+            idx = future_to_idx[future]
+            albums[idx] = future.result()
 
     os.makedirs(os.path.dirname(ALBUMS_OUTPUT), exist_ok=True)
     with open(ALBUMS_OUTPUT, "w") as f:
