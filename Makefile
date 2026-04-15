@@ -25,12 +25,18 @@ DEPS += curl $(PYTHON)
 
 ################################################################################
 
-fetch-albums:
-	@## fetch album titles and covers from Google Photos
-	$(Q) $(PYTHON) scripts/fetch-album-titles.py
+ALBUMS_INPUT      := data/gopal-krishna-saxena/albums.json
+ALBUMS_OUTPUT     := build/data/gopal-krishna-saxena/albums-resolved.json
+ALBUMS_COVERS_DIR := build/assets/images/gopal-krishna-saxena/album-covers
+
+$(ALBUMS_OUTPUT): $(ALBUMS_INPUT) scripts/fetch-album-metadata.py
+	$(Q) $(PYTHON) scripts/fetch-album-metadata.py $(ALBUMS_INPUT) $(ALBUMS_OUTPUT) $(ALBUMS_COVERS_DIR)
+
+fetch-albums: $(ALBUMS_OUTPUT)
+	@## fetch album metadata from Google Photos
 
 build: fetch-albums
-	@## build (fetch albums)
+	@## build
 
 dev: build serve
 	@## build & start local dev server

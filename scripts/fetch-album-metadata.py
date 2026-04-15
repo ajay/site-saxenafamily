@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Fetch Google Photos album titles and cover images, write resolved albums JSON."""
 
+import argparse
 import json
 import os
 import re
@@ -8,9 +9,6 @@ import subprocess
 import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-ALBUMS_INPUT = "data/gopal-krishna-saxena/albums.json"
-ALBUMS_OUTPUT = "build/data/gopal-krishna-saxena/albums-resolved.json"
-COVERS_DIR = "build/assets/images/gopal-krishna-saxena/album-covers"
 CURL_TIMEOUT = 30
 
 
@@ -40,9 +38,9 @@ def extract_cover_url(html):
     return None
 
 
-def download_cover(cover_url, slug):
-    os.makedirs(COVERS_DIR, exist_ok=True)
-    filepath = os.path.join(COVERS_DIR, f"{slug}.jpg")
+def download_cover(cover_url, slug, covers_dir):
+    os.makedirs(covers_dir, exist_ok=True)
+    filepath = os.path.join(covers_dir, f"{slug}.jpg")
     try:
         subprocess.run(
             ["curl", "-sL", "-o", filepath, cover_url],
@@ -58,7 +56,7 @@ def slugify(title):
     return re.sub(r'[^a-z0-9]+', '-', title.lower()).strip('-')
 
 
-def process_album(url):
+def process_album(url, covers_dir):
     """Fetch metadata and cover for a single album. Returns album dict."""
     html = fetch_album_page(url)
 
@@ -73,7 +71,7 @@ def process_album(url):
     cover_url = extract_cover_url(html)
     cover_path = None
     if cover_url:
-        cover_path = download_cover(cover_url, slug)
+        cover_path = download_cover(cover_url, slug, covers_dir)
 
     album = {"title": title, "url": url}
     if cover_path:
@@ -82,7 +80,13 @@ def process_album(url):
 
 
 def main():
-    with open(ALBUMS_INPUT) as f:
+    parser = argparse.ArgumentParser(description="Fetch Google Photos album metadata.")
+    parser.add_argument("albums_input", help="input JSON file with album URLs")
+    parser.add_argument("albums_output", help="output JSON file for resolved albums")
+    parser.add_argument("covers_dir", help="output directory for album cover images")
+    args = parser.parse_args()
+
+    with open(args.albums_input) as f:
         urls = json.load(f)
 
     print(f"Fetching {len(urls)} albums in parallel:\n  " + "\n  ".join(urls) + "\n")
@@ -90,16 +94,19 @@ def main():
     # Preserve original order by mapping futures to indices
     albums = [None] * len(urls)
     with ThreadPoolExecutor(max_workers=8) as pool:
-        future_to_idx = {pool.submit(process_album, url): i for i, url in enumerate(urls)}
+        future_to_idx = {
+            pool.submit(process_album, url, args.covers_dir): i
+            for i, url in enumerate(urls)
+        }
         for future in as_completed(future_to_idx):
             idx = future_to_idx[future]
             albums[idx] = future.result()
 
-    os.makedirs(os.path.dirname(ALBUMS_OUTPUT), exist_ok=True)
-    with open(ALBUMS_OUTPUT, "w") as f:
+    os.makedirs(os.path.dirname(args.albums_output), exist_ok=True)
+    with open(args.albums_output, "w") as f:
         json.dump(albums, f, ensure_ascii=False, indent=2)
 
-    print(f"\nWrote {len(albums)} albums to {ALBUMS_OUTPUT}")
+    print(f"\nWrote {len(albums)} albums to {args.albums_output}")
 
 
 if __name__ == "__main__":
